@@ -1,0 +1,540 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MCM/ICM LaTeX Template %%
+%% 2025 MCM           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{left=1in,right=0.75in,top=1in,bottom=1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Replace ABCDEF in the next line with your chosen problem
+% and replace 1111111 with your Team Control Number
+\newcommand{\Problem}{B}
+\newcommand{\Team}{2511114}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{newtxtext}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{newtxmath} % must come after amsXXX
+
+\usepackage[pdftex]{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\lhead{Team \Team}
+\rhead{}
+\cfoot{}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\graphicspath{{.}}  % Place your graphic files in the same directory as your main document
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .png}
+\thispagestyle{empty}
+\vspace*{-16ex}
+\centerline{\begin{tabular}{*3{c}}
+	\parbox[t]{0.3\linewidth}{\begin{center}\textbf{Problem Chosen}\\ \Large \textcolor{red}{\Problem}\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{2025\\ MCM/ICM\\ Summary Sheet}\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{Team Control Number}\\ \Large \textcolor{red}{\Team}\end{center}}	\\
+	\hline
+\end{tabular}}
+%%%%%%%%%%% Begin Summary %%%%%%%%%%%
+
+\begin{center}
+\Large\textbf{Title of the paper}
+\end{center}
+
+\begin{center}
+\subsection*{Abstract}
+\end{center}
+\hspace*{1.4em} The rapid global expansion of tourism has intensified conflicts among economic benefits, ecological protection, and community well-being, necessitating systemic solutions. Sustainable tourism development involves interconnected factors with complex trade-offs, a critical challenge for governments and industries. To address this, we propose three refined multi-objective optimization models tailored to local contexts.
+
+\subsection*{Model 1: Economic-Social-Environmental Coupling}
+\hspace*{1.4em} Using causal loop diagrams (CLD) and multi-criteria decision analysis (MCDA), we construct a dynamic feedback network integrating economic, social, and environmental subsystems. A multi-objective optimization framework predicts Juneau's 2025 optimal tourist capacity at \textbf{1.565 million visitors}, derived from Pareto frontier analysis.
+
+\subsection*{Model 2: Hidden Cost Optimization}
+\hspace*{1.4em} Government investments in hidden costs (e.g. 30\% of cruise tax for infrastructure, \$10.2M; 25\% for low-carbon transport, \$8.5M) enhance regional capacity while reducing tourism's carbon footprint. A carbon tax mechanism balances economic growth with emission control.
+
+\subsection*{Model 3: Regional Adaptation for Tibet}
+\hspace*{1.4em} Recalibrated for Tibet's ecological fragility and cultural uniqueness, the model incorporates climate change factors and attraction carrying capacity. Dynamic pricing and visitor guidance systems (e.g., Potala Palace) mitigate overcrowding, preserving biodiversity through thresholds (e.g., ≤5\% biodiversity loss).
+
+\vspace{1em}
+\hspace*{1.4em} \noindent\textbf{Keywords:} Multi-objective optimization; MCDA; Pareto frontier; adaptive strategies; sustainable tourism
+
+
+
+
+%%%%%%%%%%% End Summary %%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\pagestyle{fancy}
+% 取消对下一行的注释来生成目录
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\rhead{Page \thepage\ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\section{Introdution}
+\subsection{Problem Background}
+  \hspace*{1.4em} In the context of the rapidly expanding global tourism industry, ensuring economic benefits while protecting the environment and the well-being of local communities has become an urgent challenge.An important tourist destination, Juneau, Alaska, USA, is facing this problem.The number of cruise ship passengers received by Juneau each year has reached 1.6 million, far exceeding the carrying capacity of its permanent population of 30,000. On the busiest days, as many as seven large cruise ships visit simultaneously, with a total of more than 20,000 tourists on board, thereby exerting tremendous pressure on the city's infrastructure and exacerbating environmental issues, such as the accelerated retreat of the Mendenhall Glacier.\\
+  \hspace*{1.4em} While the tourism industry has proven to be financially advantageous, generating approximately \$375 million for Juno, its hidden costs, including pressure on infrastructure, increased carbon footprint, and impact on the quality of life of local residents, are gradually becoming apparent.To address these challenges, Juno City must develop and implement sustainable tourism management strategies to strike a balance between economic benefits and environmental protection.
+
+\subsection{Restatement of the Problem}
+\hspace*{1.4em} The objective of this study is to establish a sustainable tourism industry model that will optimize the number of tourists and overall income, while implementing effective management measures. To this end, the following tasks must be completed:\\
+\hspace*{1.4em} First, the optimization objective is to reduce negative impacts on the environment and community while maintaining or increasing tourism revenue.\\
+\hspace*{1.4em} Second, the constraints to be considered include daily tourist limit, infrastructure carrying capacity, environmental protection needs (such as controlling glacier retreat rate), and the quality of life of local residents. \\
+\hspace*{1.4em} The expenditure plan is as follows: the additional income will be allocated to support environmental protection, infrastructure improvement, and community development plans, thereby promoting the sustainable tourism development of Juno through a model feedback mechanism.\\
+\hspace*{1.4em} The sensitivity analysis will evaluate the model's sensitivity to key variables such as tourist numbers, tax policies, and environmental protection measures to identify the most important factors and optimize decisions.\\
+\hspace*{1.4em} The objective of this study is to provide a feasible solution that balances economy and environment for Juno City, while also serving as a reference for other tourism destinations facing similar challenges.
+
+\subsection{Literature Review}
+\hspace*{1.4em} In the context of a global focus on sustainable development, tourism is confronted with the challenge of balancing economic growth with environmental preservation. Pan et al. (2018) emphasised that, despite advancements towards a green economy, sustainable tourism continues to encounter challenges such as resource management, carbon emission reduction, and aligning tourism demand with environmental protection.\\
+\hspace*{1.4em} Sun et al. (2020) introduced the concept of managing tourism's carbon emissions by optimising the tourism demand mix, suggesting that strategic adjustments in tourist origins and activities can reduce the carbon footprint while maintaining economic benefits.\\
+\hspace*{1.4em} The impact of climate change on tourism is a significant consideration. In their seminal study, Scott et al. (2004) examined the effects of climate change on tourism resources in North America, noting potential shifts in seasons and destinations, which are of particular concern to areas reliant on natural landscapes.\\
+\hspace*{1.4em} Triwijoyo et al. (2024) developed an optimization model for sustainable sport tourism planning, integrating multiple decision-making factors for sustainable development.\\
+\hspace*{1.4em} Hardy et al. (2002) emphasised that sustainable tourism encompasses environmental, social, and economic sustainability, advocating for a holistic approach to ensure long-term viability.\\
+\hspace*{1.4em} Lusseau (2004) investigated the long-term ecological impacts of tourism, highlighting the need to consider these hidden costs in policy-making.\\
+\hspace*{1.4em} Garrigos-Simon et al. (2018) employed bibliometric and visualisation analyses to explore the nexus of tourism and sustainability, identifying research trends and providing a framework for future studies.\\
+\hspace*{1.4em} Despite extensive research, integrated management strategies for specific regions, such as Juneau, Alaska, remain underdeveloped. The present study aims to address this lacuna by developing a sustainable tourism model tailored to Juneau's unique context, focusing on local realities.
+
+\subsection{Our Work}
+\hspace*{1.4em} The objective of the present study is to formulate a sustainable tourism model for Juneau, Alaska, with the aim of optimising both visitor numbers and revenues, whilst concomitantly minimising negative environmental and community impacts. The following key steps have been identified:\\
+\hspace*{1.4em} Data Compilation and Preliminary Analysis: A comprehensive data set was collated, encompassing visitor statistics, tourism revenues, infrastructure load, environmental metrics (e.g. glacier retreat rates), and resident satisfaction. The utilisation of statistical tools facilitates the identification of pivotal issues and the assessment of potential for enhancement in the present tourism operations.\\
+\hspace*{1.4em} The construction of a model was then undertaken. A multi-objective optimisation model was developed, seeking to balance economic benefits with environmental protection and resident quality of life. Constraints included daily tourist limits, infrastructure capacity, environmental protection needs, and social satisfaction.\\
+\hspace*{1.4em} The evaluation of policy scenarios: Various policy scenarios were designed, including visitor limits, tax policies, and infrastructure investments. Utilising simulations, the impacts of these policies on economic, environmental, and social sustainability were assessed.\\
+\hspace*{1.4em} Feedback and Sensitivity Analysis: The model's feedback mechanism was utilised to explore the potential for generating additional revenues for the purpose of environmental, infrastructural, and community enhancements. Sensitivity analysis identified the model's responsiveness to key variables, thus aiding in the optimization of decision-making.\\
+\hspace*{1.4em} Model Adjustment and Optimization: Following the simulation phase, the model was refined to account for hidden costs and to better fit Juneau's specific context, ensuring its relevance for sustainable tourism assessment.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{images_and_charts/image.png}
+    \caption{flow chart}
+    \label{fig:enter-label}
+\end{figure}
+
+\section{Assumptions}
+To simplify the analysis of variable relationships in sustainable tourism assessment, the following assumptions are made:	\\
+Assumption 1：Stable Cruise Ship Parameters
+Passenger capacity, per capita consumption, and carbon emission coefficients of different cruise types remain stable.\\
+Explanation: Operational strategy adjustments, market shifts, or tourism trends may alter these parameters.\\
+Assumption 2:Fixed Tourist Spending Patterns
+Per capita consumption patterns are assumed constant across cruise types.\\
+Explanation: Economic development, price fluctuations, or destination-specific factors may invalidate this assumption, affecting revenue calculations.\\
+Assumption 3:Constant Operational Costs
+Crew expenses, taxes, infrastructure depreciation, and ecological restoration costs are fixed within the evaluation period.\\
+Explanation: Real-world complexities (e.g., inflation, policy changes) may impact cost calculations.\\
+Assumption 4:Linear Social Impact Relationships
+Ship docking frequency is linearly correlated with resident satisfaction and housing costs.\\
+Explanation: Simplified—real-world social dynamics involve multiple influencing factors.\\
+Assumption 5:Full Policy Implementation
+Government policies (e.g., carbon taxes) achieve their intended outcomes.\\
+Explanation: Unpredictable social or regional variations may hinder policy execution.\\
+
+
+\clearpage
+\section{Notations}
+\\
+\begin{table}[h]
+  \centering
+  \caption{Variable Definitions}
+  \label{tab:variables}
+  \begin{tabular}{llll}
+    \toprule
+    \textbf{Symbol} & \textbf{Definition} & \textbf{Symbol} & \textbf{Definition} \\
+    \midrule
+    $R$ & Economic revenue & $S$ & Resident satisfaction \\
+    $C$ & Total carbon emissions & $V$ & Tourist volume \\
+    $N$ & Cruise ship count & $P$ & Environmental protection investment ratio \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+% 内容\documentclass{article}
+
+\begin{document}
+
+\section{Model Preparation}
+\subsection{Data Overview}
+\hspace*{1.4em}To evaluate sustainable tourism in Juneau, Alaska, we compiled three key datasets:
+\begin{itemize}
+  \item \textbf{Economic Data}: Local revenue/expenditure, cruise industry tax income.
+  \item \textbf{Social Data}: Unemployment rate, employment rate, cruise-related job creation.
+  \item \textbf{Environmental Data}: Glacier retreat rates, carbon emissions, cruise ship CO₂ emissions.
+\end{itemize}
+\textit{Note}: Visualization was prioritized due to dataset size.
+\subsection{The correlation heatmap reveals several key insights:}
+% 内容
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{图片1.png}
+    \caption{Environmental Indicators Correlation Heatmap(2011-2022)}
+    \label{fig:Environmental Indicators Correlation Heatmap(2011-2022)}
+\end{figure}
+The correlation heatmap above can be analyzed: 1. Glacier area is significantly negatively correlated with total greenhouse gas 
+emissions (r=-0.86), methane (r=-0.86), carbon dioxide (r=-0.86), nitrous oxide (r=-0.86), which is in line with the scientific mechanism of accelerated glacier ablation by the greenhouse effect.
+%
+\subsection{Prediction of glacier area}
+% 内容
+
+Historical data and future projections of glacier area in the Juneau region show  that glacier area has continued to decrease from 30.59 in 2011 to 27.39 in 2022, a cumulative decrease of 3.2 in 11 years, with an average annual decrease of about 0.29. The accelerating trend in recent years is more evident in the 2020-2022 period when the decrease is accelerating (with an average annual decrease of 0.3), which may be related to increased global warming and environmental damage. 0.3), which may be related to increased global warming and environmental damage.
+The key drivers of the accelerated melting of glaciers may be the following:
+Greenhouse gas emissions: carbon dioxide (CO₂) emissions soar to 92,404.1 in 2019, with glacier area decreasing by 0.33 in the same year, significantly higher than in the years before and after. Methane (CH₄) and Nitrous Oxide (N₂O) emissions fluctuated more, but did not show a long-term increasing trend.
+Rising temperatures: global warming has led to an increase in average annual temperatures in Alaska, directly accelerating glacier melting
+
+\section{Part I}
+\subsection{Economic Revenue Submodel}
+\hspace*{1.4em} The cruise ship tourism industry serves as the primary catalyst for economic development in the Juneau region. \\
+\hspace*{1.4em} The tourism growth trend indicates a significant increase in cruise passenger numbers, with 1.7 million passengers recorded in 2023, marking a 28\% growth compared to 2019 figures. Projections estimate an average annual growth rate of 8\% in the coming years. \\ 
+\hspace*{1.4em} Large cruise ships $(\geq2,500 passengers)$ exhibit lower per capita spending (\$150/person) but higher total revenue.\\
+\hspace*{1.4em} Medium-sized vessels $(1,000–2,500 passengers)$ average \$200/person\\
+\hspace*{1.4em} Small ships $(<250 passengers)$ have elevated per capita costs $(\$500 / person)$ but a limited overall contribution.\\
+\hspace*{1.4em} Economic benefits:
+$R = \sum_{N=1}^{3} (Cruise \times visitor \times Visitor_{cost}) + Crew_{cost} - Operating_{cost}$
+\hspace*{1.4em} A large cruise ship can accommodate 4,000 passengers, and the cost of a cruise is calculated as follows: $150 × 4,000 passengers × 10 ships = $6 million per cruise.\\
+\hspace*{1.4em} A medium-sized cruise ship can accommodate 2,000 passengers, and the cost of a cruise is calculated as follows: \$200 × 2,000 passengers × 20 ships = \$8 million per cruise.\\
+\hspace*{1.4em} A small cruise ship can accommodate fewer passengers. 6 ships × 400 passengers × \$500 = \$1.2 million per cruise.\\
+\hspace*{1.4em} The total visitor expenditure is estimated to be approximately \$15.2 million per season, which is the sum of the expenditures from the large and medium-sized cruise ships.\\ 
+\hspace*{1.4em} The annualized expenditure, over a period of six months, is approximately \$304 million. This figure is comparable to the 2023 revenue of \$320 million generated by cruise ships for the Juneau area.  
+
+\subsection{Dynamic Adjustment Model of Social Resident SatisfactionDynamic Adjustment of Resident Satisfaction}
+Impact of ship call frequency: 
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{image0.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+\hspace*{1.4em} Specifically, it has been observed that for every 10\% increase in tourist overnight stays, the housing cost index experiences an increase of 5\%.
+\begin{equation}
+\begin{split}
+S = & 100 - 0.8 \times \frac{\text{Number of tourists}}{\text{capacity}} \\
+& - 10 \times \text{Housing cost index} + 0.5 \times \text{employment rate} \\
+& - 2 \times \left( \frac{\text{Number of large cruises}}{\text{days}} \right)
+\end{split}
+\end{equation}  \\
+Constraint Enhancement and Stability Conditions  \\
+\hspace*{1.4em} Additional 10-point drop in resident satisfaction if number of large cruise ship calls $>$5/day (protest risk)
+
+\subsection{Refinement of the Environmental Model}
+\hspace*{1.4em} Through the refinement of variables such as cruise ship type, passenger capacity, and call data, the model will achieve more precise quantification of economic, social, and environmental impacts.\\
+- Carbon Emission Factors (based on Cruise Lines International Association data):
+- Large cruise ships: 12 tons CO₂/hour\\
+- Medium-sized ships: 8 tons CO₂/hour\\
+- Small cruise ships: 3 tons CO₂/hour  \\
+Total Carbon Emissions Formula:
+\[
+C = \sum (\text{Docking duration} \times \text{Carbon emission coefficient of vessel type}) + 0.2 \times \text{Number of tourists}
+\]  
+Large cruise ship (10 ships × 12 hours × 12 tons) = 1,440 tons  \\
+Medium-sized cruise ships (20 ships × 10 hours × 8 tons) = 1,600 tons \\ 
+Small cruise ships (6 ships × 24 hours × 3 tons) = 432 tons  \\
+Tourist contribution: 1.7 million people × 0.2 tons = 340 tons  \\
+Total Carbon Emission $( C \approx 3,812 tons/season )$ → Annualized 7,624 tons, which is a gap in comparison with the environmental threshold.\\
+Dynamic Carbon Emission Formula
+$$
+C_{\text{total}} = \alpha * \text{Number of cruise ships} + \beta * \text{Number of tourists} + \gamma * \text{Glacial retreat rate}
+$$
+System calibration based on historical data, set $\alpha$=0.8 (cruise ship contribution),$\beta$=0.2 (tourist activity), $\gamma$=50 (glacier feedback)
+Glacier recession feedback mechanism:\\
+If the annual reduction rate of glacier area is$>$0.3 $\text{km}^2 $ ,trigger emergency policy (e.g. 10\% downward adjustment of tourist cap).\\
+Air quality regulation:\\
+When AQI$<$20, allow 10\% increase in visitor volume\\
+When AQI$>$30, reduce the number of cruise ship stops by 15\%.
+
+\subsection{Multi-Objective Optimization Modeling}
+\hspace*{1.4em} A causal loop diagram (CLD) maps feedback relationships among sustainable tourism factors in Juneau. Multi-criteria decision analysis (MCDA) optimizes trade-offs between stakeholder priorities. This study combines CLD and literature review to identify nine key factors (e.g., tourist volume, carbon emissions) and their interactions. MCDA generates solutions balancing economic, social, and environmental goals for sustainable planning.\\
+\subsubsection{Causal Loop Diagram Model}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{image1.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+
+\subsubsection{Causal Loop Diagram Model}
+Multi-objective optimization solution\\
+The objective function model for multi-criteria decision analysis (MCDA) is
+Decision variables:\\
+V: number of tourists (Sunday through Friday \leq 16,000/day, Saturday \leq 12,000/day)\\
+N: number of cruise ships \leq 5 ships/day\\
+P:Proportion of environmental protection investment (0-100\%)\\
+Objective function\\
+
+\begin{equation}
+\text{Max } R = 3.2 \times \frac{V}{16000} + 0.39N - (0.4P + 0.3(1-P))
+\end{equation}
+
+\begin{equation}
+\text{Max } S = 100 - 0.8 \times \frac{V}{20000} - 10 \times HCI + 0.5 \times \frac{\textit{Jobs}}{30000}
+\end{equation}
+
+\begin{equation}
+\text{Min } C = 0.8N + 0.2V + 50 \times \Delta G
+\end{equation}\\
+where HCI is the housing cost index, Jobs is the number of jobs, and $\Delta$G is the annual rate of glacial retreat\\
+Constraints
+V $\leq$ 16,000 (Sunday through Friday)\\
+V $\leq$ 12,000 (Saturday)\\
+N $\leq$ 5\\
+C $\leq$ 50 kilotons/year\\
+Non-dominated Sorting Genetic Algorithm (NSGA-II) is used to generate the Pareto frontier with the following steps\\
+Step 1: Configure decision variables (tourist volume, cruise ship count, environmental investment ratio) with NSGA-II parameters: population size 100, iterations 200, crossover probability 0.9, mutation probability 0.1.\\
+Step 2: Determine the fitness function\\
+economic Benefits：$R=3.2 * 10^8*V/V_{max} +0.39* 10^8 *N-cost$\\
+Resident Satisfaction: $S=100-0.8*V/20000-10*HCI+0.5*Jobs/30000$\\
+Carbon Emission: $C=0.8N+0.2V+50*∆G$\\
+
+%此处格式有问题
+HCI is the housing cost index, Jobs is the number of jobs, and ∆G is the annual rate of glacial retreat \\
+Constraints: the penalty function method is utilized to deal with hard constraints (V $\leq$ 16000) \\
+Step 3: The NSGA-II algorithm generates non-dominated solution sets with parameter settings: population size 100, iterations 200, crossover probability 0.9, and mutation probability 0.1.\\
+
+Step 4: Based on the Pareto frontier data, the objective weights were calculated as 3\% for economy, 40\% for society, and 22\% for environment, and the matrix consistency test was performed using the hierarchical analysis method $(AHP)$ $(CR=0.003)$, and the subjective weights were 45\% for economy, 30\% for society, and 25\% for environment.\\ 
+%此处格式有误
+Combined Weights: $W_{COMPREHENSIVE}=0.6W_{AHP}+0.4W_{TOPSIS}$\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{image2.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}\\
+
+The set of required Pareto solutions is shown below\\
+\begin{table}[h]
+\centering
+\caption{Pareto Solution Set Example}
+\label{tab:pareto}
+\begin{tabular}{S[table-format=1.1] S[table-format=2.0] S[table-format=1.1]}
+\toprule
+\textbf{Economic Revenue (Billion USD)} & \textbf{Resident Satisfaction (Points)} & \textbf{Carbon Emissions (Kilotons)} \\
+\midrule
+3.5 & 75 & 7.5 \\
+3.2 & 82 & 6.8 \\ 
+2.8 & 85 & 5.2 \\
+2.0 & 90 & 4.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+The Pareto solution set illustrates trade-offs among economic, environmental, and social objectives. Based on Juneau’s development needs, two optimal plans are recommended: \\
+R$\in$[\$290–\$350]million\\
+S$\in$ [80–85] points\\
+C$\in$ [6–7.6] kilotons.\\
+1.Equilibrium: \\
+Achieving balanced sustainable tourism in the Juneau area is $R = 3.2$ million, $S = 82$, $C = 6.8$ kilotons.\\
+
+V=14000，N=4,P=45\%\\
+
+2.Environmentally prioritized $\in$ [2.35,3.25]，S $\in$[83,90]，C $\in$ [4.2,6.2]
+Scenarios for achieving sustainable development in the Juneau area under the environmental priority scenario are: R=250 million, S =94, C=4.5 kt (V=12,000,N=3p=60\%).  %此处格式有问题
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{image3.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+\subsection{Results of the sensitivity analysis}
+Tourist volume ±10\%: ±\$30M revenue, ±3 satisfaction, ±0.8kt emissions.\\
+Cruise count ±1 ship: ±1kt emissions, ±\$15M revenue.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{image4.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+Large cruise limit (5→4/day): 15\%↓ emissions, 8\%↓ revenue, +5 resident satisfaction.\\
+Carbon tax (+\$10/ton): 7\%↓ emissions, ±3\% revenue (shift to mid-sized ships).
+Small cruise incentive (+1 overnight): 2\%↑ housing costs, +1 satisfaction (employment boost)
+
+
+\section{Part II}
+
+\subsection{Building a Hidden Cost Feedback System}
+The feedback system integrates dynamic pricing, quota management, and targeted fund allocation to balance economic growth, social well-being, and environmental \\protection in sustainable tourism. Key components:\\
+Resource Optimization: Dynamic pricing and quotas prevent overcrowding and enhance resource efficiency.\\
+Strategic Funding:
+30\% (\$10.2M): Infrastructure upgrades (roads, sewage).\\
+25\% (\$8.5M): Ecological restoration (glaciers, forests).\\
+20\% (\$6.8M): Community support (waste management, conflict mediation).\\
+15\% (\$5.1M): Cultural preservation (local heritage promotion).\\
+10\% (\$3.4M): Industrial diversification (fisheries, forestry).\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{image5.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure} %图片很糊
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{image6.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+Model Correction\\
+New Objective Function\\
+-Minimize hidden costs\\
+$H = 0.3*Infrastructure depletion + 0.25*Ecological restoration + 0.2*Community support + 0.15*Cultural preservation + 0.1*Industrial diversification$
+Constraints Updated.\\
+Hidden cost expenditure $\leq$ direct income + indirect income.\\
+Resident satisfaction $\geq$ 70 points\\
+Carbon emissions $\leq$ 50 kilotons/year\\
+
+% 内容
+\subsection{Pareto Frontier Calculation}
+The NSGA-II algorithm was used to generate the four-objective Pareto frontiers $(economic, social, environmental, and hidden costs)$ as follows.\\
+
+\begin{table}[h]
+\centering
+\caption{Pareto Solution Set Example}
+\label{tab:pareto}
+\begin{tabular}{S[table-format=1.1] S[table-format=2.0] S[table-format=1.1]}
+\toprule
+\textbf{Economic Revenue (Billion USD)} & \textbf{Resident Satisfaction (Points)} & \textbf{Carbon Emissions (Kilotons)} \\
+\midrule
+3.5 & 75 & 7.5 \\
+3.2 & 82 & 6.8 \\ 
+2.8 & 85 & 5.2 \\
+2.0 & 90 & 4.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Recommended Programs for Sustainable Tourism Development\\
+Balanced: R =300 million, S =95, C =6.0 kt, H =9 million USD\\
+Environmental Priority: R =250 million, S =98, C =4.5 kilotons, H =7 million USD.\\
+By identifying hidden costs and optimizing the allocation of funds, the model generates a four-dimensional Pareto frontier by adding a hidden cost minimization objective to the original economic, social, and environmental objectives. The equilibrium scenario (R=300 million, S =95, C =6.0 kilotons, H =9 million USD) balances short-term economic gains with long-term sustainability.
+
+\subsection{Social Subsystem}
+\hspace*{1.4em} Upgraded water/waste infrastructure and carbon taxes on tourism reduced emissions, boosting resident satisfaction $(e.g., stability index +5\%)$. 
+
+\subsection{Environmental Subsystem}
+\hspace*{1.4em} Low-carbon investments (e.g., electric ports) and glacier/forest restoration cut tourism’s carbon footprint. Improved ecological resilience strengthened tourist capacity, creating a feedback loop that sustains economic growth. The synergy of economic, social, and environmental subsystems scientifically optimizes visitor management for long-term sustainability.
+
+
+\section{The Implementation of Model Migration}
+\hspace*{1.4em} Given the disparities between Tibet and the city of Juneau with regard to geography, tourism resources, and economic structure, it is imperative to adjust the applicable model so as to more accurately assess and promote the sustainable development of Tibet.
+\subsection{Model Modification}
+\hspace*{1.4em} In terms of the environment, Tibet, as an ecologically fragile region with unique natural landscapes, faces increased pressure on its ecosystems and threats to its biodiversity, mainly stemming from the expansion of tourism activities and the dual impact of climate change. \\
+Dynamic equations of ecosystem stress：$E=k_1*T+k_2*C$\\
+\hspace*{1.4em} %三线表% \\
+\hspace*{1.4em} Finally, biodiversity conservation constraints are defined as the proportion of biodiversity loss $\leq$5\% (set based on relevant ecological conservation targets).\\
+\hspace*{1.4em} With respect to the carbon footprint, Tibet's transportation sector is predominantly characterized by land transportation. \\
+\hspace*{1.4em} The following formula is employed to calculate carbon emissions from land transportation: $C_{\text{land}} = \sum_{i} d_i \times e_i$
+\\
+%三线表%
+\hspace*{1.4em} The formula for scenic energy consumption is as follows: $C_{\text{scenic}} = P \times t \times g$%三线表%
+\\
+\hspace*{1.4em} The economic sub-model for Tibet necessitates an adjustment, moving away from a reliance on single natural landscape tourism and seasonal hotel revenues towards a focus on dual-driven tourism revenues from nature and culture, complemented by measures to promote tourism during off-season periods.\\
+\hspace*{1.4em} The income function is defined as：$ R = P_{\text{natural}} \times V_{\text{natural}} + P_{\text{cultural}} \times V_{\text{cultural}} + T_{\text{overnight}} - M_{\text{erosion}} + I_{\text{incentive}}$\\
+%三线表%
+The correction of a multi-objective optimization model
+\[
+M \left\{
+\begin{array}{l}
+\text{Max } R = \text{economic gain}\\
+\text{Max } S = \text{Residents' satisfaction}\\
+\text{Min } C = \text{carbon emissions}
+\end{array}
+\right.
+\]
+The following section will address the modification of constraints.
+\[
+\begin{aligned}
+    & S_R \geq 70 \downarrow \\
+    & V_T \geq 300 \text{million/year} \downarrow \\
+    & E_T \leq 0.3 \downarrow
+\end{aligned}
+\]
+Pareto Frontier Parameter Adjustment
+The economic, social, and environmental adaptation weights of Tibet are as follows: $W_1$ = 0.11, $W_2$ = 0.7, and $W_3$ = 0.19, respectively.
+
+
+\subsection{Implementation and Effectiveness of Models}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{image7.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+Optimal solutions cluster within:\\
+R$\in$[ 0.8 - 1.2]B\\
+C$\in$[ 0.2 - 0.4]\\
+S$\in$[ 65 - 75 ]\\
+Single-objective prioritization (e.g., maximizing revenue) degrades other goals. \\Policymaking requires trade-offs on the Pareto frontier:\\
+Ecological priority: Lower revenue (e.g., ¥800M) but reduced ecosystem stress.\\
+Cultural/resident focus: Limit tourist volume to sustain high satisfaction.\\
+Implementation: Dynamically adjust strategies using real-time monitoring (e.g., diverting tourists via differentiated routes) and allocate tourism income to ecological restoration and community development for long-term balance.
+
+\subsection{Sensitivity Analysis}
+\hspace*{1.4em} Tourist volume (V) critically affects economic revenue (↑), ecological pressure (↑), and social satisfaction (↓). Community compensation shows highest social sensitivity (0.7), while carbon taxes weakly impact revenue (0.12) but improve equity via redistribution. Key strategies: tourist caps (e.g., peak season limits), dynamic pricing, and redirecting carbon taxes to ecology/resident welfare.
+\subsection{Strategies for Promoting Low-Traffic Attractions in Tibet}
+\subsubsection{Dynamic Pricing to Regulate Tourist Flow}
+\hspace*{1.4em} In order to effectively control the visitor flow of each attraction, the following dynamic pricing formula is defined: 
+
+\begin{equation}
+    p = p_0 \times \left(1 + \alpha \times \frac{N-N_0}{N_0}\right)
+\end{equation}
+%三线表%
+
+Optimization of Tourist Distribution Model
+\hspace*{1.4em} The optimization of tourist distribution model has been developed to achieve a scientific and reasonable allocation of tourists across various attractions in Tibet.\\
+
+\begin{equation}
+    \min \sum_{j=1}^{m} \beta_j \times \left| \frac{N_j}{N_{j,\text{max}}} - \frac{\sum_{j=1}^{m} N_j}{\sum_{j=1}^{m} N_{j,\text{max}}} \right|
+\end{equation}
+%三线表%
+\hspace*{1.4em} The objective of the model is to minimize the sum of the absolute values of the deviations between the actual visitor share of each attraction and the overall average share. Through continuous optimization of this model, more reasonable tourist guidance policies can be formulated, such as adjusting the promotional efforts of each attraction, providing differentiated tourism services, etc., so as to make the distribution of tourists among attractions in Tibet more balanced and promote the sustainable development of tourism in Tibet.\\
+\hspace*{1.4em} As illustrated in the accompanying figure, this study utilizes a computer simulation to model the number of tourists at five popular attractions in Tibet over the course of one month. The simulation results are presented as visual representations of the dynamic trend of the number of tourists in each attraction with the date.\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{image8.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+\hspace*{1.4em} Potala Palace because of its high popularity, the number of tourists fluctuated greatly and increased significantly; The Sapu Sacred Mountain may have fewer tourists and less fluctuation due to its remote location and insufficient publicity; Yamdrok was affected by traffic and seasonal factors, the number of tourists fluctuated and increased, and the growth was relatively stable; In Namtso, the number of tourists fluctuated significantly and increased strongly due to its landscape and religious significance; And Kailash, which attracts specific groups due to its religiousness, saw a steady and slight increase in visitors, but high altitude and inaccessibility limited the growth of visitors. The results help the tourism authorities understand the flow characteristics and formulate strategies to promote the sustainable development of tourism in Tibet.
+
+% 内容
+\newpage
+\begin{thebibliography}{99}
+
+\bibitem{Pan2018}
+Pan, S.-Y., Gao, M., Kim, H., Shah, K. J., Pei, S.-L., \& Chiang, P.-C. (2018). Advances and challenges in sustainable tourism toward a green economy. \textit{Science of The Total Environment}, 635, 452–469. doi:10.1016/j.scitotenv.2018.04.134
+
+\bibitem{Sun2020}
+Sun, Y.-Y., Lin, P.-C., \& Higham, J. (2020). Managing tourism emissions through optimizing the tourism demand mix: Concept and analysis. \textit{Tourism Management}, 81, 104161. doi:10.1016/j.tourman.2020.104161
+
+\bibitem{Scott2004}
+Scott, Daniel, Geoff McBoyle, and Michael Schwartzentruber. (2004). Climate change and the distribution of climatic resources for tourism in North America. \textit{Climate Research}, 27(2), 105-117.
+
+\bibitem{Triwijoyo2024}
+Triwijoyo, Bambang Krismono, Muhammad Taufik, and Herman Mawengkang. (2024). Optimization Model of Multi Criteria Decision Analysis for Smart and Sustainable Sport Tourism Planning Development Problem. \textit{Mathematical Modelling of Engineering Problems}, 11(11).
+
+\bibitem{Hardy2002}
+Hardy, A., Beeton, R. J. S., \& Pearson, L. (2002). Sustainable Tourism: An Overview of the Concept and its Position in Relation to Conceptualisations of Tourism. \textit{Journal of Sustainable Tourism}, 10(6), 475–496. doi:10.1080/09669580208667183
+
+\bibitem{Lusseau2004}
+Lusseau, David. (2004). The hidden cost of tourism: detecting long-term effects of tourism using behavioral information. \textit{Ecology and Society}, 9(1).
+
+\bibitem{Garrigos-Simon2018}
+Garrigos-Simon, Fernando J., Yeamduan Narangajavana-Kaosiri, and Ismael Lengua-Lengua. (2018). Tourism and sustainability: A bibliometric and visualization analysis. \textit{Sustainability}, 10(6), 1976.
+
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+\end

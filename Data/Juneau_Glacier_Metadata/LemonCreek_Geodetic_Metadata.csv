@@ -1,0 +1,15 @@
+Date,DEM Pixel Size,Ortho Pixel Size,DEM Glacier Coverage,Glacier Area,Technique,Platform,Source,DEM Technician,Boundary Technician,Source Imagery Access
+7/5/1948,na,0.86,na,12.81,Sfm,aerial,Scanned films,McNeil,McNeil,https://earthexplorer.usgs.gov/
+9/18/1957,2.67,0.33,1,12.41,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+9/16/1966,na,0.13,na,12.23,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+8/21/1973,na,na,na,12.12,Sfm,aerial,Scanned films,McNeil,McNeil,https://earthexplorer.usgs.gov/
+8/30/1974,4.41,0.28,0.84,12.11,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+8/11/1979,6.5,0.4,0.66,12.1,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+8/28/1989,3.26,0.41,0.76,11.67,Sfm,aerial,Scanned films,McNeil,McNeil,Not published
+8/27/1999,na,na,na,10.69,na,satellite,Landsat,na,McNeil,https://earthexplorer.usgs.gov/
+8/11/2007,na,na,na,10.61,Socet Set,satellite,classified,Fahey,McNeil,"Classified, not available"
+9/4/2013,na,na,na,10.37,na,satellite,ifSAR,na,McNeil,http://www.gina.alaska.edu/
+9/8/2014,na,0.48,na,10.32,ASP,satellite,Worldview,McNeil,McNeil,Available for scientific use via https://www.digitalglobe.com/
+8/28/2016,na,0.44,na,10.12,ASP,satellite,Worldview,McNeil,McNeil,Available for scientific use via https://www.digitalglobe.com/
+9/2/2018,na,na,na,9.67,na,satellite,Pleiades,na,McNeil,https://earth.esa.int
+10/5/2021,2,0.37,0.97,9.59,ASP,satellite,Worldview,McNeil,McNeil,Available for scientific use via https://www.digitalglobe.com/

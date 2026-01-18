@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Geodetic Data for USGS Benchmark Glaciers: Orthophotos, Digital Elevation Models, Glacier Boundaries and Surveyed Positions</title>
+  <link rel="schema.dc" href="http://purl.org/metadata/dublin_core"/>
+  <meta name="dc.title" content="Geodetic Data for USGS Benchmark Glaciers: Orthophotos, Digital Elevation Models, Glacier Boundaries and Surveyed Positions "/>
+  <meta name="dc.creator" content="Christopher J. McNeil (ORCID: 0000-0003-4170-0428) Caitlyn E. Florentine (ORCID: 0000-0002-7028-0963) Valerie A. L. Bright (ORCID: 0000-0002-7627-8004) Mark J. Fahey (ORCID: 0000-0002-1853-6992) Evan McCann Christopher F. Larsen Evan E. Thoms (ORCID: 0000-0002-8945-613X) David E. Shean Lisa A. McKeon (ORCID: 0000-0002-1760-0235) Rod S. March William Keller (ORCID: 0000-0002-0511-4168) Erin N. Whorton (ORCID: 0000-0002-1395-3084) Shad O'Neel (ORCID: 0000-0002-9185-0144) Emily H. Baker (ORCID: 0000-0002-0938-3496) Louis C. Sass (ORCID: 0000-0003-4677-029X) Katherine E. Bollen (ORCID: 0000-0003-4345-089) "/>
+  <meta name="dc.subject" content="USGS:ASC226 "/>
+  <meta name="dc.description" content="Since the late 1950s, the USGS has maintained a long-term glacier mass-balance program at three North American glaciers. Measurements began on South Cascade Glacier, WA in 1958, expanding to Gulkana and Wolverine glaciers, AK in 1966, and later Sperry Glacier, MT in 2005. Additional measurements have been made on Lemon Creek Glacier, AK to compliment data collected by the Juneau Icefield Research Program (JIRP; Pelto and others, 2013). Direct field measurements are combined with weather data and imagery analyses to estimate the seasonal and annual mass balance at each glacier in both a conventional and reference surface format (Cogley and others, 2011). The analysis framework (O'Neel and others, 2019, van Beusekom and others, 2010) is identical at each glacier to enable cross-comparison between output time series. Vocabulary used follows Cogley and others (2011) Glossary of Glacier Mass Balance. This portion of the data release includes geodetic data used in mass balance analyses. The USGS uses geodetic data to quantify glacier area, glacier hypsometry, and the change in glacier volume and mass (e.g., Cogley and others 2011; Zemp and others 2013; van Beusekom and others, 2010; O'Neel and others 2014). Here we describe these basin-scale data, how they are produced, and the format in which they are preserved and disseminated. Gridded products comprise the first class of data and include orthorectified images and Digital Elevation Models (DEMs). Prior to the early 2000s, these grids were derived from aerial stereo photography or historic topographic maps. More recently, high-resolution space-borne imagery facilitated DEM and ortho-image production using approaches described herein.  The second class of data are vector geospatial files of glacier margins. These are interpreted products, produced via manual digitization of the boundary between rock and ice identified from ortho-rectified images, or the boundary between neighboring glaciers identified from ice divide velocity maps. The third class of data are point data from GNSS surveys. These include post-processed points that represent mass balance stake locations, glacier surface elevations, installations, and points of interest on and around these glaciers. "/>
+  <meta name="dc.publisher" content="U.S. Geological Survey, Alaska Science Center"/>
+  <meta name="dc.contributor" content="USGS Climate and Land Use Change Glacier and Climate Project "/>
+  <meta name="dc.date" content="20190905"/>
+  <meta name="dc.type" content="data.tabular digital data, vector digital data, raster digital data"/>
+  <meta name="dc.format" content="TIF, SHP, KML, CSV"/>
+  <meta name="dc.identifier" content="https://doi.org/10.5066/P9R8BP3K"/>
+  <meta name="dc.source" content="The U.S. Geological Survey, Alaska Science Center is the authoritative source and distributor of these data."/>
+  <meta name="dc.lang" content="en"/>
+  <meta name="dc.relation" content="Part of USGS Benchmark Glacier Project Comprehensive Data Collection"/>
+  <meta name="dc.coverage.x.min" scheme="DD" content="-148.95"/>
+  <meta name="dc.coverage.x.max" scheme="DD" content="-113.75"/>
+  <meta name="dc.coverage.y.min" scheme="DD" content="48.62"/>
+  <meta name="dc.coverage.y.max" scheme="DD" content="63.35"/>
+  <meta name="dc.coverage.placeName" content="Gulkana Glacier"/>
+  <meta name="dc.coverage.placeName" content="Wolverine Glacier"/>
+  <meta name="dc.coverage.placeName" content="Sperry Glacier"/>
+  <meta name="dc.coverage.placeName" content="Lemon Creek Glacier"/>
+  <meta name="dc.coverage.placeName" content="South Cascade Glacier"/>
+  <meta name="dc.coverage.placeName" content="Montana"/>
+  <meta name="dc.coverage.placeName" content="Alaska"/>
+  <meta name="dc.coverage.placeName" content="Washington"/>
+  <meta name="dc.coverage.t.min" content="1966"/>
+  <meta name="dc.coverage.t.max" content="2021"/>
+  <meta name="dc.rights" content="Access constraints: None; Use constraints: It is requested that the authors and the USGS be cited for any subsequent publications that reference this dataset."/>
+  <meta name="generated-from" content="phpRCpeWt.xml"/>
+  <style type="text/css">
+    /* These CSS rules can be modified to apply different styles to your outline-format metadata. */
+    .major-section { border-top: 1px solid black; padding-top: 0.5em; }
+    .child { margin-left: 2em; margin-bottom: 0.5em; }
+    .element-name { font-style: italic; }
+    .element-value { }
+    .blank { margin-top: 1em; }
+    #page-bottom { visibility: hidden; display: none; }
+    #generated-by { font-size: small; }
+  </style>
+</head>
+<body>
+<h1>Geodetic Data for USGS Benchmark Glaciers: Orthophotos, Digital Elevation Models, Glacier Boundaries and Surveyed Positions</h1>
+<p>
+<h3>Metadata:</h3>
+<ul>
+<li><a href="#1">Identification_Information</a></li>
+<li><a href="#2">Data_Quality_Information</a></li>
+<li><a href="#3">Spatial_Data_Organization_Information</a></li>
+<li><a href="#4">Spatial_Reference_Information</a></li>
+<li><a href="#5">Entity_and_Attribute_Information</a></li>
+<li><a href="#6">Distribution_Information</a></li>
+<li><a href="#7">Metadata_Reference_Information</a></li>
+</ul>
+<div class="major-section" id="1">
+<span class="element-name idinfo">Identification_Information:</span><div class="child">
+<span class="element-name citation">Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Christopher J. McNeil (ORCID: 0000-0003-4170-0428)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Caitlyn E. Florentine (ORCID: 0000-0002-7028-0963)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Valerie A. L. Bright (ORCID: 0000-0002-7627-8004)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Mark J. Fahey (ORCID: 0000-0002-1853-6992)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Evan McCann</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Christopher F. Larsen</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Evan E. Thoms (ORCID: 0000-0002-8945-613X)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">David E. Shean</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Lisa A. McKeon (ORCID: 0000-0002-1760-0235)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Rod S. March</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">William Keller (ORCID: 0000-0002-0511-4168)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Erin N. Whorton (ORCID: 0000-0002-1395-3084)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Shad O'Neel (ORCID: 0000-0002-9185-0144)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Emily H. Baker (ORCID: 0000-0002-0938-3496)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Louis C. Sass (ORCID: 0000-0003-4677-029X)</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Katherine E. Bollen (ORCID: 0000-0003-4345-089)</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">20190905</span><br/>
+<span class="element-name title">Title:</span>
+<div class="child element-value title">
+Geodetic Data for USGS Benchmark Glaciers: Orthophotos, Digital Elevation Models, Glacier Boundaries and Surveyed Positions
+</div>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">tabular digital data, vector digital data, raster digital data</span><br/>
+<span class="element-name serinfo">Series_Information:</span><div class="child">
+<span class="element-name sername">Series_Name:</span>
+<div class="child element-value sername">
+Geodetic Data for USGS Benchmark Glaciers: Orthophotos, Digital Elevation Models, Glacier Boundaries and Surveyed Positions
+</div>
+<span class="element-name issue">Issue_Identification:</span> <span class="element-value issue">ver 3.0, August 2022</span><br/>
+</div>
+<span class="element-name pubinfo">Publication_Information:</span><div class="child">
+<span class="element-name pubplace">Publication_Place:</span> <span class="element-value pubplace">Anchorage, Alaska</span><br/>
+<span class="element-name publish">Publisher:</span> <span class="element-value publish">U.S. Geological Survey, Alaska Science Center</span><br/>
+</div>
+<span class="element-name othercit">Other_Citation_Details:</span>
+<div class="child element-value othercit">
+Suggested Citation:  McNeil, C.J., Florentine, C.E., Bright, V.A.L., Fahey, M.J., McCann, E., Larsen, C.F., Thoms, E.E., Shean, D.E., McKeon, L.A., March, R.S., Keller, W., Whorton, E.N., O'Neel, S., Baker, E.H., Sass, L.C. and Bollen, K.E. 2019, Geodetic data for USGS benchmark glaciers: orthophotos, digital elevation models, glacier boundaries and surveyed positions (ver 3.0, August 2022): U.S. Geological Survey data release, <a href="https://doi.org/10.5066/P9R8BP3K">https://doi.org/10.5066/P9R8BP3K</a>
+</div>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="https://doi.org/10.5066/P9R8BP3K">https://doi.org/10.5066/P9R8BP3K</a></span><br/>
+<span class="element-name lworkcit">Larger_Work_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">U.S. Geological Survey Benchmark Glacier Program</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">2020</span><br/>
+<span class="element-name title">Title:</span> <span class="element-value title">USGS Benchmark Glacier Project Comprehensive Data Collection</span><br/>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">dataset</span><br/>
+<span class="element-name pubinfo">Publication_Information:</span><div class="child">
+<span class="element-name pubplace">Publication_Place:</span> <span class="element-value pubplace">Anchorage, Alaska</span><br/>
+<span class="element-name publish">Publisher:</span> <span class="element-value publish">U.S. Geological Survey, Alaska Science Center</span><br/>
+</div>
+<span class="element-name othercit">Other_Citation_Details:</span>
+<div class="child element-value othercit">
+U.S. Geological Survey Benchmark Glacier Program, 2020, USGS benchmark glacier project comprehensive data collection: U.S. Geological Survey data release, <a href="https://doi.org/10.5066/P9AGXQSR">https://doi.org/10.5066/P9AGXQSR</a>
+</div>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="https://doi.org/10.5066/P9AGXQSR">https://doi.org/10.5066/P9AGXQSR</a></span><br/>
+</div>
+</div>
+</div>
+</div>
+<span class="element-name descript">Description:</span><div class="child">
+<span class="element-name abstract">Abstract:</span>
+<div class="child element-value abstract">
+Since the late 1950s, the USGS has maintained a long-term glacier mass-balance program at three North American glaciers. Measurements began on South Cascade Glacier, WA in 1958, expanding to Gulkana and Wolverine glaciers, AK in 1966, and later Sperry Glacier, MT in 2005. Additional measurements have been made on Lemon Creek Glacier, AK to compliment data collected by the Juneau Icefield Research Program (JIRP; Pelto and others, 2013). Direct field measurements are combined with weather data and imagery analyses to estimate the seasonal and annual mass balance at each glacier in both a conventional and reference surface format (Cogley and others, 2011). The analysis framework (O'Neel and others, 2019, van Beusekom and others, 2010) is identical at each glacier to enable cross-comparison between output time series. Vocabulary used follows Cogley and others (2011) Glossary of Glacier Mass Balance.
+<div class="blank"></div>
+This portion of the data release includes geodetic data used in mass balance analyses. The USGS uses geodetic data to quantify glacier area, glacier hypsometry, and the change in glacier volume and mass (e.g., Cogley and others 2011; Zemp and others 2013; van Beusekom and others, 2010; O'Neel and others 2014). Here we describe these basin-scale data, how they are produced, and the format in which they are preserved and disseminated.
+<div class="blank"></div>
+Gridded products comprise the first class of data and include orthorectified images and Digital Elevation Models (DEMs). Prior to the early 2000s, these grids were derived from aerial stereo photography or historic topographic maps. More recently, high-resolution space-borne imagery facilitated DEM and ortho-image production using approaches described herein. 
+<div class="blank"></div>
+The second class of data are vector geospatial files of glacier margins. These are interpreted products, produced via manual digitization of the boundary between rock and ice identified from ortho-rectified images, or the boundary between neighboring glaciers identified from ice divide velocity maps.
+<div class="blank"></div>
+The third class of data are point data from GNSS surveys. These include post-processed points that represent mass balance stake locations, glacier surface elevations, installations, and points of interest on and around these glaciers.
+</div>
+<span class="element-name purpose">Purpose:</span>
+<div class="child element-value purpose">
+Geodetic measurements collected on North American glaciers since the mid-1940s characterize glacier surface elevation, area, and motion. These products enable glacier mass balance estimates independent of other traditional methods (e.g. glaciological or gravimetric). Herein we describe available geodetic data products for the USGS Benchmark Glacier Project and outline the techniques employed to produce these products.
+</div>
+</div>
+<span class="element-name timeperd">Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name rngdates">Range_of_Dates/Times:</span><div class="child">
+<span class="element-name begdate">Beginning_Date:</span> <span class="element-value begdate">1966</span><br/>
+<span class="element-name enddate">Ending_Date:</span> <span class="element-value enddate">2021</span><br/>
+</div>
+</div>
+<span class="element-name current">Currentness_Reference:</span> <span class="element-value current">ground condition</span><br/>
+</div>
+<span class="element-name status">Status:</span><div class="child">
+<span class="element-name progress">Progress:</span> <span class="element-value progress">In work</span><br/>
+<span class="element-name update">Maintenance_and_Update_Frequency:</span> <span class="element-value update">As needed</span><br/>
+</div>
+<span class="element-name spdom">Spatial_Domain:</span><div class="child">
+<span class="element-name bounding">Bounding_Coordinates:</span><div class="child">
+<span class="element-name westbc">West_Bounding_Coordinate:</span> <span class="element-value westbc">-148.95</span><br/>
+<span class="element-name eastbc">East_Bounding_Coordinate:</span> <span class="element-value eastbc">-113.75</span><br/>
+<span class="element-name northbc">North_Bounding_Coordinate:</span> <span class="element-value northbc">63.35</span><br/>
+<span class="element-name southbc">South_Bounding_Coordinate:</span> <span class="element-value southbc">48.62</span><br/>
+</div>
+</div>
+<span class="element-name keywords">Keywords:</span><div class="child">
+<span class="element-name theme">Theme:</span><div class="child">
+<span class="element-name themekt">Theme_Keyword_Thesaurus:</span> <span class="element-value themekt">USGS Metadata Identifier</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">USGS:ASC226</span><br/>
+</div>
+<span class="element-name theme">Theme:</span><div class="child">
+<span class="element-name themekt">Theme_Keyword_Thesaurus:</span> <span class="element-value themekt">ISO 19115 Topic Category</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">geoscientificInformation</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">boundaries</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">climatologyMeteorologyAtmosphere</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">elevation</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">environment</span><br/>
+</div>
+<span class="element-name theme">Theme:</span><div class="child">
+<span class="element-name themekt">Theme_Keyword_Thesaurus:</span> <span class="element-value themekt">NASA GCMD Earth Science Keyword Thesaurus</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Cryosphere</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Glaciers/Ice Sheets</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Glaciers</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Ablation Zones/Accumulation Zones</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Glacier Elevation/Ice Sheet Elevation</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Glacier Mass Balance/Ice Sheet Mass Balance</span><br/>
+</div>
+<span class="element-name theme">Theme:</span><div class="child">
+<span class="element-name themekt">Theme_Keyword_Thesaurus:</span> <span class="element-value themekt">USGS CSA Biocomplexity Thesaurus</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Glaciology</span><br/>
+</div>
+<span class="element-name theme">Theme:</span><div class="child">
+<span class="element-name themekt">Theme_Keyword_Thesaurus:</span> <span class="element-value themekt">USGS Thesaurus</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Snow and ice cover</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Glaciation</span><br/>
+<span class="element-name themekey">Theme_Keyword:</span> <span class="element-value themekey">Glaciology</span><br/>
+</div>
+<span class="element-name place">Place:</span><div class="child">
+<span class="element-name placekt">Place_Keyword_Thesaurus:</span> <span class="element-value placekt">USGS Geographic Names Information System (GNIS)</span><br/>
+<span class="element-name placekey">Place_Keyword:</span> <span class="element-value placekey">Gulkana Glacier</span><br/>
+<span class="element-name placekey">Place_Keyword:</span> <span class="element-value placekey">Wolverine Glacier</span><br/>
+<span class="element-name placekey">Place_Keyword:</span> <span class="element-value placekey">Sperry Glacier</span><br/>
+<span class="element-name placekey">Place_Keyword:</span> <span class="element-value placekey">Lemon Creek Glacier</span><br/>
+<span class="element-name placekey">Place_Keyword:</span> <span class="element-value placekey">South Cascade Glacier</span><br/>
+<span class="element-name placekey">Place_Keyword:</span> <span class="element-value placekey">Montana</span><br/>
+<span class="element-name placekey">Place_Keyword:</span> <span class="element-value placekey">Alaska</span><br/>
+<span class="element-name placekey">Place_Keyword:</span> <span class="element-value placekey">Washington</span><br/>
+</div>
+</div>
+<span class="element-name accconst">Access_Constraints:</span> <span class="element-value accconst">None</span><br/>
+<span class="element-name useconst">Use_Constraints:</span>
+<div class="child element-value useconst">
+It is requested that the authors and the USGS be cited for any subsequent publications that reference this dataset.
+</div>
+<span class="element-name ptcontac">Point_of_Contact:</span><div class="child">
+<span class="element-name cntinfo">Contact_Information:</span><div class="child">
+<span class="element-name cntperp">Contact_Person_Primary:</span><div class="child">
+<span class="element-name cntper">Contact_Person:</span> <span class="element-value cntper">USGS Benchmark Glacier Project</span><br/>
+<span class="element-name cntorg">Contact_Organization:</span> <span class="element-value cntorg">U.S. Geological Survey, Alaska Science Center</span><br/>
+</div>
+<span class="element-name cntaddr">Contact_Address:</span><div class="child">
+<span class="element-name addrtype">Address_Type:</span> <span class="element-value addrtype">Mailing and Physical</span><br/>
+<span class="element-name address">Address:</span> <span class="element-value address">4210 University Drive</span><br/>
+<span class="element-name city">City:</span> <span class="element-value city">Anchorage</span><br/>
+<span class="element-name state">State_or_Province:</span> <span class="element-value state">Alaska</span><br/>
+<span class="element-name postal">Postal_Code:</span> <span class="element-value postal">99508</span><br/>
+<span class="element-name country">Country:</span> <span class="element-value country">USA</span><br/>
+</div>
+<span class="element-name cntvoice">Contact_Voice_Telephone:</span> <span class="element-value cntvoice">907-786-7000</span><br/>
+<span class="element-name cntemail">Contact_Electronic_Mail_Address:</span> <span class="element-value cntemail">ascweb@usgs.gov</span><br/>
+</div>
+</div>
+<span class="element-name datacred">Data_Set_Credit:</span> <span class="element-value datacred">USGS Climate and Land Use Change Glacier and Climate Project</span><br/>
+<span class="element-name crossref">Cross_Reference:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">U.S. Geological Survey</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unpublished material</span><br/>
+<span class="element-name title">Title:</span> <span class="element-value title">USGS Glacier Studies Website</span><br/>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">web site</span><br/>
+<span class="element-name pubinfo">Publication_Information:</span><div class="child">
+<span class="element-name pubplace">Publication_Place:</span> <span class="element-value pubplace">online</span><br/>
+<span class="element-name publish">Publisher:</span> <span class="element-value publish">U.S. Geological Survey</span><br/>
+</div>
+<span class="element-name othercit">Other_Citation_Details:</span> <span class="element-value othercit">USGS Glaciology Studies information web site</span><br/>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="https://www2.usgs.gov/landresources/lcs/glacierstudies/">https://www2.usgs.gov/landresources/lcs/glacierstudies/</a></span><br/>
+</div>
+</div>
+<span class="element-name crossref">Cross_Reference:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">O'Neel, S.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">McNeil, C.J.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Sass, L.C.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Florentine, C.E.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Baker, E.H.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Peitzsch, E.H.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">McGrath, D.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Fountain, A.G.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Fagre, D.</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">2019</span><br/>
+<span class="element-name title">Title:</span>
+<div class="child element-value title">
+Reanalysis of the US Geological Survey Benchmark Glaciers: long-term insight into climate forcing of glacier mass balance
+</div>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">journal article</span><br/>
+<span class="element-name serinfo">Series_Information:</span><div class="child">
+<span class="element-name sername">Series_Name:</span> <span class="element-value sername">Journal of Glaciology</span><br/>
+<span class="element-name issue">Issue_Identification:</span> <span class="element-value issue">65(253):850-866</span><br/>
+</div>
+<span class="element-name pubinfo">Publication_Information:</span><div class="child">
+<span class="element-name pubplace">Publication_Place:</span> <span class="element-value pubplace">online</span><br/>
+<span class="element-name publish">Publisher:</span> <span class="element-value publish">Cambridge University Press</span><br/>
+</div>
+<span class="element-name othercit">Other_Citation_Details:</span>
+<div class="child element-value othercit">
+O'Neel, S., McNeil, C.J., Sass, L.C., Florentine, C.E., Baker, E.H., Peitzsch, E.H., McGrath, D., Fountain, A.G., Fagre, D. 2019. Reanalysis of the US Geological Survey Benchmark Glaciers: long-term insight into climate forcing of glacier mass balance. Journal of Glaciology 65(253):850-866  doi:10.1017/jog.2019.66
+</div>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="https://doi.org/10.1017/jog.2019.66">https://doi.org/10.1017/jog.2019.66</a></span><br/>
+</div>
+</div>
+</div>
+</div>
+<div class="major-section" id="2">
+<span class="element-name dataqual">Data_Quality_Information:</span><div class="child">
+<span class="element-name attracc">Attribute_Accuracy:</span><div class="child">
+<span class="element-name attraccr">Attribute_Accuracy_Report:</span>
+<div class="child element-value attraccr">
+Geodetic data are comprised of location and elevation information; their accuracy is described in the positional accuracy of this document.
+</div>
+</div>
+<span class="element-name logic">Logical_Consistency_Report:</span>
+<div class="child element-value logic">
+Missing data is denoted with the code na in tabular data, or a background NAN or zero value in GeoTiffs. Data gaps are described more fully in the entity-attribute section of this metadata record, in the entity definitions.
+</div>
+<span class="element-name complete">Completeness_Report:</span>
+<div class="child element-value complete">
+Complete data is provided here for the dates of imagery acquisition listed herein. This specific imagery was chosen for its relevancy to glacier mass balance, and selected for its fall date, lack of clouds, and coverage of the desired area. A variety of additional imagery is publicly available, and could be processed as described in this documentation if desired.
+<div class="blank"></div>
+Surveyed position data is provided for periods and locations over which the data has received thorough quality control. Additional position data exists, but is not yet quality-controlled to the degree documented in the processing steps portion of this metadata. When further processing is complete, this data release will be updated with additional data.
+</div>
+<span class="element-name posacc">Positional_Accuracy:</span><div class="child">
+<span class="element-name horizpa">Horizontal_Positional_Accuracy:</span><div class="child">
+<span class="element-name horizpar">Horizontal_Positional_Accuracy_Report:</span>
+<div class="child element-value horizpar">
+Orthophotos - orthophotos have sub-meter scale pixel size. Absolute uncertainty of geolocation is not well constrained.
+<div class="blank"></div>
+DEMs - absolute accuracy of DEMs is not investigated. Relative accuracy is investigated in detail, by comparing and minimizing changes in off-glacier, stable rock areas through the timeseries of DEMs. Thus, relative uncertainty is well-quantified and described in O'Neel and others (2019), but absolute uncertainty is not explicitly well constrained. 
+<div class="blank"></div>
+Glacier Boundaries - Bigger glaciers tend to have smaller error in measured glacier area, as a percentage of their total error, than small glaciers. Boundaries are digitized at the smallest scale possible given the pixel size mentioned in the Metadata tables included in the release. Pixel size should give a rough estimate of XY error in location of the boundary.
+<div class="blank"></div>
+Survey Points - Points are only included if they were successfully post-processed against a base station tied to a local survey monument. Local survey monuments are known to within 10 cm horizontally (based on the RMSE of multiple occupations), and survey points must have an RMSE of less than 20 cm (or they are rejected). The overall horizontal accuracy is 30 cm.
+</div>
+</div>
+</div>
+<span class="element-name lineage">Lineage:</span><div class="child">
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Nolan, M.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Post, A.S.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Hauer, W.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Zinck, A.</span><br/>
+<span class="element-name origin">Originator:</span> <span class="element-value origin">O'Neel, S.</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">2017</span><br/>
+<span class="element-name title">Title:</span>
+<div class="child element-value title">
+Photogrammetric scans of aerial photographs of North American glaciers
+</div>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">remote-sensing image</span><br/>
+<span class="element-name pubinfo">Publication_Information:</span><div class="child">
+<span class="element-name pubplace">Publication_Place:</span> <span class="element-value pubplace">online</span><br/>
+<span class="element-name publish">Publisher:</span> <span class="element-value publish">Arctic Data Center</span><br/>
+</div>
+<span class="element-name othercit">Other_Citation_Details:</span>
+<div class="child element-value othercit">
+Nolan, M., Post, A.S., Hauer, W., Zinck, A., O'Neel, S. 2017. Photogrammetric scans of aerial photographs of North American glaciers. Arctic Data Center  doi:10.18739/A2VH5CJ8K
+</div>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="https://doi.org/10.18739/A2VH5CJ8K">https://doi.org/10.18739/A2VH5CJ8K</a></span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Digital and/or Hardcopy</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name mdattim">Multiple_Dates/Times:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19670831</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19740904</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19790825</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19930711</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19700929</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19791006</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19860905</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19921006</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20010920</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Scanned films, Nolan and others, 2017 (aerial photography)</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">aerial imagery</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Austin Post</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unknown</span><br/>
+<span class="element-name title">Title:</span>
+<div class="child element-value title">
+Scanned aerial imagery, acquired by Austin Post and the USGS between 1958 and 1999. Much of this is published in Nolan and others (2017; doi:10.18739/A2VH5CJ8K), but the publication does not include the full archive. This source imagery is from the Post collection, but remains unpublished in USGS archives. This orthophoto represents the first publication of derived imagery.
+</div>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">remote-sensing image</span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Scanned film images</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name mdattim">Multiple_Dates/Times:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19570809</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20050819</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19480705</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19730821</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19890828</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19580813</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19500807</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19780824</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20060808</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Scanned films (aerial photography)</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">aerial imagery</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Austin Post</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unknown</span><br/>
+<span class="element-name title">Title:</span>
+<div class="child element-value title">
+Scanned aerial imagery, acquired with a digital camera by Austin Post and the USGS between 1958 and 1999. Much of this is published in Nolan (2017; doi:10.18739/A2VH5CJ8K), but this publication does not include the full archive. This source imagery is from the Post collection, but remains unpublished in USGS archives. This orthophoto represents the first publication of derived imagery.
+</div>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">tabular digital data</span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Digital images</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20070811</span><br/>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Digital images (aerial photography)</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">aerial imagery</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Christopher Larsen</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unknown</span><br/>
+<span class="element-name title">Title:</span>
+<div class="child element-value title">
+Aerial imagery acquired via fixed wing aircraft using a Nikon D810 camera by Chris Larsen
+</div>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">remote-sensing image</span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Digital images</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name mdattim">Multiple_Dates/Times:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20141007</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20150813</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Nikon D810 camera (aerial photography)</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">aerial imagery</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">DigitalGlobe</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unknown</span><br/>
+<span class="element-name title">Title:</span>
+<div class="child element-value title">
+Worldview imagery from DigitalGlobe available for scientific use via <a href="https://www.digitalglobe.com/">https://www.digitalglobe.com/</a>
+</div>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">tabular digital data</span><br/>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="https://www.digitalglobe.com/">https://www.digitalglobe.com/</a></span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Digital and/or Hardcopy</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name mdattim">Multiple_Dates/Times:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20160830</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20140908</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20160828</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20081001</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20151014</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20140907</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20120822</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20180912</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20210919</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20211005</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20210813</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20201019</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Worldview (satellite imagery)</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">satellite imagery</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">U.S. Department of Agriculture</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unknown</span><br/>
+<span class="element-name title">Title:</span> <span class="element-value title">Landsat imagery</span><br/>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">tabular digital data</span><br/>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a></span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Digital and/or Hardcopy</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19990827</span><br/>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Landsat (satellite imagery)</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">satellite imagery</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Mark Fahey</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unknown</span><br/>
+<span class="element-name title">Title:</span>
+<div class="child element-value title">
+Classified aerial and satellite photography, U.S. Department of Defense
+</div>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">tabular digital data</span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Digital and/or Hardcopy</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name mdattim">Multiple_Dates/Times:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20070811</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20050826</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20080917</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20040926</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Classified Imagery (aerial and satellite photography)</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">aerial and satellite imagery</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">ifSAR, USGS</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unknown</span><br/>
+<span class="element-name title">Title:</span> <span class="element-value title">ifSAR data used to delineate glacier boundaries</span><br/>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">tabular digital data</span><br/>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="http://www.gina.alaska.edu/">http://www.gina.alaska.edu/</a></span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Digital and/or Hardcopy</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20130904</span><br/>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Interferometric synthetic aperture radar (ifSAR) data</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">glacier ifSAR elevation data</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Spot Image</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unknown</span><br/>
+<span class="element-name title">Title:</span> <span class="element-value title">Pleiades satellite imagery</span><br/>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">tabular digital data</span><br/>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="https://earth.esa.int">https://earth.esa.int</a></span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Digital and/or Hardcopy</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name mdattim">Multiple_Dates/Times:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20180902</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20160902</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Pleiades (satellite imagery)</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">satellite imagery</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Johnson, A.</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">1980</span><br/>
+<span class="element-name title">Title:</span>
+<div class="child element-value title">
+Grinnell and Sperry Glaciers, Glacier National Park, Montana: a record of vanishing ice
+</div>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">document</span><br/>
+<span class="element-name serinfo">Series_Information:</span><div class="child">
+<span class="element-name sername">Series_Name:</span> <span class="element-value sername">USGS Professional Paper</span><br/>
+<span class="element-name issue">Issue_Identification:</span> <span class="element-value issue">1180</span><br/>
+</div>
+<span class="element-name pubinfo">Publication_Information:</span><div class="child">
+<span class="element-name pubplace">Publication_Place:</span> <span class="element-value pubplace">online</span><br/>
+<span class="element-name publish">Publisher:</span> <span class="element-value publish">U.S. Geological Survey</span><br/>
+</div>
+<span class="element-name othercit">Other_Citation_Details:</span>
+<div class="child element-value othercit">
+Johnson, A. 1980. Grinnell and Sperry Glaciers, Glacier National Park, Montana: a record of vanishing ice: U.S. Geological Survey Professional Paper 1180, 29 p.  doi:10.3133/pp1180
+</div>
+<span class="element-name onlink">Online_Linkage:</span> <span class="element-value onlink"><a href="https://doi.org/10.3133/pp1180">https://doi.org/10.3133/pp1180</a></span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">publication</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name mdattim">Multiple_Dates/Times:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19500901</span><br/>
+</div>
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">19600908</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">topographic map, Johnson, 1980</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">Elevation model</span><br/>
+</div>
+<span class="element-name srcinfo">Source_Information:</span><div class="child">
+<span class="element-name srccite">Source_Citation:</span><div class="child">
+<span class="element-name citeinfo">Citation_Information:</span><div class="child">
+<span class="element-name origin">Originator:</span> <span class="element-value origin">Lockheed Corporation</span><br/>
+<span class="element-name pubdate">Publication_Date:</span> <span class="element-value pubdate">Unknown</span><br/>
+<span class="element-name title">Title:</span> <span class="element-value title">Ikonos satellite imagery</span><br/>
+<span class="element-name geoform">Geospatial_Data_Presentation_Form:</span> <span class="element-value geoform">remote-sensing image</span><br/>
+</div>
+</div>
+<span class="element-name typesrc">Type_of_Source_Media:</span> <span class="element-value typesrc">Digital and/or Hardcopy</span><br/>
+<span class="element-name srctime">Source_Time_Period_of_Content:</span><div class="child">
+<span class="element-name timeinfo">Time_Period_Information:</span><div class="child">
+<span class="element-name sngdate">Single_Date/Time:</span><div class="child">
+<span class="element-name caldate">Calendar_Date:</span> <span class="element-value caldate">20110706</span><br/>
+</div>
+</div>
+<span class="element-name srccurr">Source_Currentness_Reference:</span> <span class="element-value srccurr">observed</span><br/>
+</div>
+<span class="element-name srccitea">Source_Citation_Abbreviation:</span> <span class="element-value srccitea">Ikonos (satellite imagery)</span><br/>
+<span class="element-name srccontr">Source_Contribution:</span> <span class="element-value srccontr">satellite imagery</span><br/>
+</div>
+<span class="element-name procstep">Process_Step:</span><div class="child">
+<span class="element-name procdesc">Process_Description:</span>
+<div class="child element-value procdesc">
+Photogrammetric methods form the basis of USGS Benchmark Glacier Project geodetic products. Data processing techniques have evolved over the lifespan of the project, but each technique employs photogrammetry to provide spatially extensive glacier surface elevations (DEMs) in a common reference frame. We produce orthorectified mosaics (Sevara, 2013) from the same images used in DEM construction. Here, we describe the three photogrammetric methods used to produce DEMs in historical order from oldest to newest. Additionally, we describe our approach to extract glacier margins from orthomosaics, as well as the format of attribute tables within each glacier margin shapefile.
+<div class="blank"></div>
+Full citations of all bibliographic references are provided in the document &quot;GeodeticData_README.pdf&quot; included with this data package.
+</div>
+<span class="element-name procdate">Process_Date:</span> <span class="element-value procdate">2019</span><br/>
+</div>
+<span class="element-name procstep">Process_Step:</span><div class="child">
+<span class="element-name procdesc">Process_Description:</span>
+<div class="child element-value procdesc">
+Photogrammetry/Gridded Products: Both airborne and spaceborne (e.g., WorldView, IKONOS) platforms have been used to acquire stereo optical imagery of glaciers in North America. Below we detail the analyses used to produce geodetic data from imagery sources. Techniques and resolution (pixel size) of gridded geodetic products are listed in tables within this data release. The exact process varies by input, as specified in the following process steps.
+</div>
+<span class="element-name procdate">Process_Date:</span> <span class="element-value procdate">2019</span><br/>
+</div>
+<span class="element-name procstep">Process_Step:</span><div class="child">
+<span class="element-name procdesc">Process_Description:</span>
+<div class="child element-value procdesc">
+Analog Recovery: The oldest available DEMs were derived using analog methods. The original topographic maps were created using stereo-plotters guided by plane table benchmarks. High quality scanning of the maps allowed elevation contours to be manually digitized and interpolated using a natural neighbor interpolation routine (Sibson, 1981). For older DEMS at Sperry Glacier, absolute elevation errors, due to the sometimes poorly resolved historic elevation datums, were corrected (i.e., Florentine et al., 2018).
+<div class="blank"></div>
+Full citations of all bibliographic references are provided in the document &quot;GeodeticData_README.pdf&quot; included with this data package.
+</div>
+<span class="element-name procdate">Process_Date:</span> <span class="element-value procdate">2019</span><br/>
+</div>
+<span class="element-name procstep">Process_Step:</span><div class="child">
+<span class="element-name procdesc">Process_Description:</span>
+<div class="child element-value procdesc">
+Aerial Imagery: Airborne optical stereo imagery has been acquired over glaciers in North America since the mid-1940s. However, most of these images (e.g., Nolan et al., 2017) lack exterior (i.e., camera location and position) and interior (i.e., camera focal length and radial lens distortion) information. Structure from motion (Sfm) algorithms provide means to optimize both exterior and interior camera orientations based on ground control points (GCPs), in lieu of exterior and interior camera information (Verhoeven et al., 2012). Using opportunistic, manually-identified GCPs (e.g., boulders, buildings, intersecting rock joints) visible in both aerial imagery and high-resolution georeferenced images (typically satellite imagery), and available focal lengths if physically printed on aerial imagery, we optimized camera calibrations and locations, tying Sfm point clouds and the resulting DEMs and ortho images to the landscape (e.g., Maurer et al., 2015, Kienholz et al., 2016).
+<div class="blank"></div>
+Recent increases in the affordability of high-resolution consumer-grade cameras, and access to precision global positioning systems, has permitted aerial imagery to be acquired in bulk, at relatively low cost since 2014. These additional aerial imagery datasets were obtained via a Nikon D810 camera with a Distagon 25 mm f/2.0 ZF.2 Lens, or a Nikon D850 camera with a Zeiss 25 mm installed in a Cessna 180 with a camera port. A Trimble R7 GPS connected to an externally mounted Sensor Systems L1/L2 antenna recorded raw GPS data at 5 Hz for aircraft positioning. The camera remote flash port was used to trigger event markers in the Trimble R7 data recording, thereby precisely timing each shutter actuation. Although the exterior and interior orientations of recently acquired images are known, DEMs and ortho images were still produced using Sfm to maintain consistency with DEMs derived from older aerial imagery and to leverage the automated workflow of commercial Sfm-based commercial software (e.g., Agisoft Photoscan).
+<div class="blank"></div>
+Dense point clouds derived from Sfm were directly converted to DEMs, with no interpolation/extrapolation applied to unresolved areas of the DEMs. For ortho images, we derive an interpolated mesh from dense point clouds, which was then used to orthorectify and mosaic images.
+<div class="blank"></div>
+Full citations of all bibliographic references are provided in the document &quot;GeodeticData_README.pdf&quot; included with this data package.
+</div>
+<span class="element-name procdate">Process_Date:</span> <span class="element-value procdate">2019</span><br/>
+</div>
+<span class="element-name procstep">Process_Step:</span><div class="child">
+<span class="element-name procdesc">Process_Description:</span>
+<div class="child element-value procdesc">
+Aerial Light Detection and Range (LiDAR): Since 2017, increased access to consumer-grade LiDAR platforms, coupled to precision global positioning systems has permitted high accuracy elevation data acquisitions. These data were acquired via a Riegl VQ-580 ii laser scanner utilizing a Applanix 610 Global Network Satellite System mounted on the bottom of a Cessna 180. These data were finally processed using commercial software (e.g., Applanix POSPac; Riegl RiProcess; QTModeler) to process a final DEM, with no interpolation/extrapolation applied to unresolved areas.
+</div>
+<span class="element-name procdate">Process_Date:</span> <span class="element-value procdate">2020</span><br/>
+</div>
+<span class="element-name procstep">Process_Step:</span><div class="child">
+<span class="element-name procdesc">Process_Description:</span>
+<div class="child element-value procdesc">
+Satellite Imagery: Commercially sourced satellite imagery (i.e., Digital Globe) was processed using the open source Automated Stereogrammetry Software Ames Stereo Pipeline (ASP) (Shean et al., 2016). Classified satellite imagery (i.e., National Technical Means) was processed using commercially available software (SOCET SET). DEMs derived from classified sources are made publicly available herein, while the ortho images remain classified and hence, not publicly available. Caution should be used in the analysis of DEMs generated by SOCET SET photogrammetry software as they contain interpolated areas where elevations were unresolved. These areas can be easily identified by inspecting hillshade files derived from the DEM. For commercially obtained satellite imagery, processed using ASP, no interpolation was applied in unresolved areas of the DEMs.
+</div>
+<span class="element-name procdate">Process_Date:</span> <span class="element-value procdate">2019</span><br/>
+</div>
+<span class="element-name procstep">Process_Step:</span><div class="child">
+<span class="element-name procdesc">Process_Description:</span>
+<div class="child element-value procdesc">
+Glacier Boundary Shapefiles: Glacier boundaries were either digitized from original topographic maps (Johnson, 1980) or manually delineated along well-defined regions of the glacier margin (e.g., debris bands or between barren ground and ice) using imagery described in the preceding text. This step was sufficient for glaciers that occupied a well-constrained basin. However, glaciers with ice divides that are shared with other glaciers (Taku), required an extra step. For these glaciers, which also tended to be positioned in perennially snow-covered areas, glacier flow velocity fields (Burgess et al., 2013) were used to define glacier boundaries, i.e., glacier outlines were defined along divergent velocity fields (Keinholz et al., 2015). In these locations, we assumed ice divides were stationary and did not move through time. In years with multiple images, we utilized the image closest to the end of the mass balance year. Additional outlines for Glacier National Park have been published previously by USGS in Fagre et al. (2017). The 2005 Sperry Glacier boundary released here is from this previous publication (Fagre et al., 2017), although all other glacier boundary data are novel. For each glacier boundary, we include the year and specific date the boundary represents, the imagery used to produce the glacier boundary, planar metric area, and the length of the glacier measured along a centerline profile.
+<div class="blank"></div>
+Glacier margin attribute fields include the name of the glacier, the glacier boundary for each year, the specific date of imagery acquisition, glacier area, glacier length, and imagery source.
+<div class="blank"></div>
+Full citations of all bibliographic references are provided in the document &quot;GeodeticData_README.pdf&quot; included with this data package.
+</div>
+<span class="element-name procdate">Process_Date:</span> <span class="element-value procdate">2019</span><br/>
+</div>
+<span class="element-name procstep">Process_Step:</span><div class="child">
+<span class="element-name procdesc">Process_Description:</span>
+<div class="child element-value procdesc">
+GNSS Data: Global Navigation Satellite System (GNSS) data was collected on mass balance stakes, at and around mass balance index sites, at equipment installations, and at various sites of interest on and around the Benchmark Glaciers. Two receivers were used to collect simultaneous data at a local survey monument (or base station) and at the survey site, or in some cases a single receiver was used if there is an existing CORS station within 10 km. Stop and go kinematic observations were made at and around index sites with a minimum 30-seconds of data at each stop, all other observations are static occupations with a minimum 8 minutes of data. The local survey monument location is fixed using the average from Online Positioning User Service (OPUS) positions of the base station files. Maximum baseline length is less than 10 km. Positions are reported in the local UTM zone for a given glacier, WGS-84, with ellipsoid heights.
+<div class="blank"></div>
+The base station files associated with local survey monuments were processed using the Online Positioning Service (OPUS) provided by NOAA's National Geodetic Survey. These files are generally 6-12 hrs in length. Multiple files are averaged to determine the local survey monument location, and the RMSE of those positions is used to estimate the uncertainty in local survey monument position.
+<div class="blank"></div>
+Survey points were then processed against the local base station. We processed baselines using precise ephemerides in Trimble Business Center. We calculated mean positions from the baseline length and direction relative to the local base-station. Observations without coincident local base station data were removed, as were any positions with RMSE greater than 20 cm horizontally and 50 cm vertically.
+<div class="blank"></div>
+Following this, manual quality control checks were performed. All of the data was plotted and inspected to ensure logical correctness. For example, stake observations were inspected to make sure the name was correct; names were corrected if the correct name could be determined from the time, position, and field notes; the observation was removed if the correct name could not be determined. Repeat surveys of stakes were inspected to make sure the stake appeared to flow down-glacier. Velocities from multiple surveys on the same stake were plotted and inspected for plausibility. Less than 10 observations were removed based on implausible flow directions and velocities, and these were associated with spring (April or May) surveys of older stakes that field notes suggested were badly bent.
+</div>
+<span class="element-name procdate">Process_Date:</span> <span class="element-value procdate">20211118</span><br/>
+</div>
+</div>
+</div>
+</div>
+<div class="major-section" id="3">
+<span class="element-name spdoinfo">Spatial_Data_Organization_Information:</span><div class="child">
+<span class="element-name indspref">Indirect_Spatial_Reference:</span>
+<div class="child element-value indspref">
+Spatial reference method describes the boundaries data. The DEM and ortho photos are raster data
+</div>
+<span class="element-name direct">Direct_Spatial_Reference_Method:</span> <span class="element-value direct">Vector</span><br/>
+<span class="element-name ptvctinf">Point_and_Vector_Object_Information:</span><div class="child">
+<span class="element-name sdtsterm">SDTS_Terms_Description:</span><div class="child">
+<span class="element-name sdtstype">SDTS_Point_and_Vector_Object_Type:</span> <span class="element-value sdtstype">Area chain</span><br/>
+<span class="element-name ptvctcnt">Point_and_Vector_Object_Count:</span> <span class="element-value ptvctcnt">50</span><br/>
+</div>
+</div>
+</div>
+</div>
+<div class="major-section" id="4">
+<span class="element-name spref">Spatial_Reference_Information:</span><div class="child">
+<span class="element-name horizsys">Horizontal_Coordinate_System_Definition:</span><div class="child">
+<span class="element-name planar">Planar:</span><div class="child">
+<span class="element-name mapproj">Map_Projection:</span><div class="child">
+<span class="element-name mapprojn">Map_Projection_Name:</span> <span class="element-value mapprojn">Transverse Mercator</span><br/>
+<span class="element-name transmer">Transverse_Mercator:</span><div class="child">
+<span class="element-name sfctrmer">Scale_Factor_at_Central_Meridian:</span> <span class="element-value sfctrmer">0.9996</span><br/>
+<span class="element-name longcm">Longitude_of_Central_Meridian:</span> <span class="element-value longcm">-147.0</span><br/>
+<span class="element-name latprjo">Latitude_of_Projection_Origin:</span> <span class="element-value latprjo">0.0</span><br/>
+<span class="element-name feast">False_Easting:</span> <span class="element-value feast">500000.0</span><br/>
+<span class="element-name fnorth">False_Northing:</span> <span class="element-value fnorth">0.0</span><br/>
+</div>
+</div>
+<span class="element-name planci">Planar_Coordinate_Information:</span><div class="child">
+<span class="element-name plance">Planar_Coordinate_Encoding_Method:</span> <span class="element-value plance">coordinate pair</span><br/>
+<span class="element-name coordrep">Coordinate_Representation:</span><div class="child">
+<span class="element-name absres">Abscissa_Resolution:</span> <span class="element-value absres">1</span><br/>
+<span class="element-name ordres">Ordinate_Resolution:</span> <span class="element-value ordres">1</span><br/>
+</div>
+<span class="element-name plandu">Planar_Distance_Units:</span> <span class="element-value plandu">meters</span><br/>
+</div>
+</div>
+<span class="element-name geodetic">Geodetic_Model:</span><div class="child">
+<span class="element-name horizdn">Horizontal_Datum_Name:</span> <span class="element-value horizdn">World Geodetic System of 1984</span><br/>
+<span class="element-name ellips">Ellipsoid_Name:</span> <span class="element-value ellips">World Geodetic System of 1984</span><br/>
+<span class="element-name semiaxis">Semi-major_Axis:</span> <span class="element-value semiaxis">6378137</span><br/>
+<span class="element-name denflat">Denominator_of_Flattening_Ratio:</span> <span class="element-value denflat">298.257223563</span><br/>
+</div>
+</div>
+<span class="element-name vertdef">Vertical_Coordinate_System_Definition:</span><div class="child">
+<span class="element-name altsys">Altitude_System_Definition:</span><div class="child">
+<span class="element-name altdatum">Altitude_Datum_Name:</span> <span class="element-value altdatum">World Geodetic System of 1984</span><br/>
+<span class="element-name altres">Altitude_Resolution:</span> <span class="element-value altres">0.5</span><br/>
+<span class="element-name altres">Altitude_Resolution:</span> <span class="element-value altres">0.01</span><br/>
+<span class="element-name altunits">Altitude_Distance_Units:</span> <span class="element-value altunits">meters</span><br/>
+<span class="element-name altenc">Altitude_Encoding_Method:</span>
+<div class="child element-value altenc">
+Explicit elevation coordinate included with horizontal coordinates
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="major-section" id="5">
+<span class="element-name eainfo">Entity_and_Attribute_Information:</span><div class="child">
+<span class="element-name detailed">Detailed_Description:</span><div class="child">
+<span class="element-name enttyp">Entity_Type:</span><div class="child">
+<span class="element-name enttypl">Entity_Type_Label:</span> <span class="element-value enttypl">glacierBoundaries.zip</span><br/>
+<span class="element-name enttypd">Entity_Type_Definition:</span>
+<div class="child element-value enttypd">
+ZIP package containing vector geospatial data of glacier boundaries, either digitized from original topographic maps (Johnson, 1980) or manually delineated along well-defined regions of the glacier margin. Attribute tables include the name of the glacier, the glacier boundary for each year, the specific date of imagery acquisition, glacier area, and glacier length. Presented in both ESRI shapefile (SHP) and Keyhole Markup Language (KML) formats. Files are named following the convention: [Glacier]_Glacier_Boundaries.shp (.kml)
+</div>
+<span class="element-name enttypds">Entity_Type_Definition_Source:</span> <span class="element-value enttypds">Producer Defined</span><br/>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Year</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span>
+<div class="child element-value attrdef">
+Year of glacier margin, the ground condition on the date specified in the &quot;Date&quot; column
+</div>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">1948</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">2021</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">Year (YYYY)</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">1</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Date</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">Specific date of imagery acquisition (YYYY/MM/DD)</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">1948/07/05</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">2021/10/19</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">Date (YYYY/MM/DD)</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">1</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Area</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">Glacier area on referenced date</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">0.81</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">19.22</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">Square kilometers (km2)</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Length</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">Length of glacier along centerline</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">1.24</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">9.52</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">Kilometers (km)</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+</div>
+<span class="element-name detailed">Detailed_Description:</span><div class="child">
+<span class="element-name enttyp">Entity_Type:</span><div class="child">
+<span class="element-name enttypl">Entity_Type_Label:</span> <span class="element-value enttypl">[Glacier]_[YYYY.MM.DD]_DEM.tif</span><br/>
+<span class="element-name enttypd">Entity_Type_Definition:</span>
+<div class="child element-value enttypd">
+Digital Elevation Model (DEM) from the glacier and acquisition date specified in the filename. Files are named following the convention: [Glacier]_[YYYY.MM.DD]_DEM.tif.
+</div>
+<span class="element-name enttypds">Entity_Type_Definition_Source:</span> <span class="element-value enttypds">Producer Defined</span><br/>
+</div>
+</div>
+<span class="element-name detailed">Detailed_Description:</span><div class="child">
+<span class="element-name enttyp">Entity_Type:</span><div class="child">
+<span class="element-name enttypl">Entity_Type_Label:</span> <span class="element-value enttypl">[Glacier]_[YYYY.MM.DD]_Ortho.tif</span><br/>
+<span class="element-name enttypd">Entity_Type_Definition:</span>
+<div class="child element-value enttypd">
+Orthophoto from the glacier and acquisition date specified in the filename. Files are named following the convention: [Glacier]_[YYYY.MM.DD]_Ortho.tif.
+</div>
+<span class="element-name enttypds">Entity_Type_Definition_Source:</span> <span class="element-value enttypds">Producer Defined</span><br/>
+</div>
+</div>
+<span class="element-name detailed">Detailed_Description:</span><div class="child">
+<span class="element-name enttyp">Entity_Type:</span><div class="child">
+<span class="element-name enttypl">Entity_Type_Label:</span> <span class="element-value enttypl">[Glacier]_Geodetic_Metadata.csv</span><br/>
+<span class="element-name enttypd">Entity_Type_Definition:</span>
+<div class="child element-value enttypd">
+Tables with metadata for each DEM and Orthophoto image, including source data type and access information, image acquisition date, and processing data. Files are named following the convention: [Glacier]_Geodetic_Metadata.csv
+</div>
+<span class="element-name enttypds">Entity_Type_Definition_Source:</span> <span class="element-value enttypds">Producer Defined</span><br/>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Date</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">Date of imagery acquisition</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">1948-07-05</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">2021-10-19</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">days</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">1</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">DEM Pixel Size</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">pixel size; raster spatial resolution (m)</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">0.28</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">17.15</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">meters</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Ortho Pixel Size</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">pixel size; raster spatial resolution (m)</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">0.13</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">2.23</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">meters</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">DEM Glacier Coverage</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">Fraction of glacier covered by the DEM (from 0 to 1).</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">0.46</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">1.0</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">unitless</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Glacier Area</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">Measured glacier area, as defined by glacier boundary</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">0.81</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">19.22</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">square kilometers</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Technique</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">method of DEM creation</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Sfm</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Structure from motion (Sfm) techniques used to create DEM.</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Scanning</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">DEM derived from scanned topographic maps.</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">na</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span>
+<div class="child element-value edomvd">
+No DEM was made from this orthophoto; thus, no technique is listed
+</div>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Socet Set</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span>
+<div class="child element-value edomvd">
+Commercially available software named Socet Set used to generate DEMs from classified imagery.
+</div>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">ASP</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span>
+<div class="child element-value edomvd">
+Ames Stereo Pipeline (ASP) used to generate DEMs from satellite imagery.
+</div>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Platform</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">type of imagery used, i.e. aerial or satellite</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">aerial</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">aerial imagery</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">na</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">no imagery used</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">satellite</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">satellite imagery used</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Source</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span>
+<div class="child element-value attrdef">
+source imagery used, i.e. scanned aerial photo collection or specific satellite
+</div>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Scanned films</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">scanned aerial photographs</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">topographic map, Johnson, 1980</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Topographic map, as described in Johnson, 1980</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Scanned films, Nolan and others, 2017</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Scanned aerial photographs, available in Nolan and others, 2017</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Landsat</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Landsat satellite imagery</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">classified</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Classified satellite imagery</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Digital images</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span>
+<div class="child element-value edomvd">
+aerial imagery, as digital photographs (not analog). Processed using Sfm techniques.
+</div>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Worldview</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Worldview satellite imagery. Imagery courtesy of DigitalGlobe.</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Ikonos</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Ikonos satellite imagery</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">ifSAR</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Interferometric synthetic aperture radar (ifSAR) created DEM.</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Nikon D810 camera</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span>
+<div class="child element-value edomvd">
+aerial imagery acquired using a Nikon D810 camera. Processed using Sfm techniques.
+</div>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Pleiades</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">satellite imagery acquired from Pleiades</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">DEM Technician</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span>
+<div class="child element-value attrdef">
+Last name of technician who created the DEM in this release. Can be cross-referenced with author list of this data release to find full name.
+</div>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name udom">Unrepresentable_Domain:</span>
+<div class="child element-value udom">
+Last name of technician who created the DEM in this release. Can be cross-referenced with author list of this data release to find full name.
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Boundary Technician</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span>
+<div class="child element-value attrdef">
+Last name of technician who digitized the glacier boundary in this release. Can be cross-referenced with author list of this data release to find full name.
+</div>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name udom">Unrepresentable_Domain:</span>
+<div class="child element-value udom">
+Last name of technician who digitized the glacier boundary in this release. Can be cross-referenced with author list of this data release to find full name.
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Source Imagery Access</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">Information about accessing imagery used to create orthophotos</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Not published</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Non-georeferenced source imagery is not published</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv"><a href="https://doi.org/10.18739/A2VH5CJ8K">https://doi.org/10.18739/A2VH5CJ8K</a></span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Accessible via the DOI link</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Available for scientific use via <a href="https://www.digitalglobe.com/">https://www.digitalglobe.com/</a></span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span>
+<div class="child element-value edomvd">
+Accessible via DigitalGlobe, or other avenues providing WorldView data to the scientific community. This imagery provided courtesy of digital globe.
+</div>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv"><a href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a></span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">USGS Earth Explorer portal</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv">Classified, not available</span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Classified imagery, not public</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv"><a href="http://www.gina.alaska.edu/">http://www.gina.alaska.edu/</a></span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Available via GINA</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv"><a href="https://earth.esa.int">https://earth.esa.int</a></span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Accessible via the European Space Agency at the link provided</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name edom">Enumerated_Domain:</span><div class="child">
+<span class="element-name edomv">Enumerated_Domain_Value:</span> <span class="element-value edomv"><a href="https://doi.org/10.3133/pp1180">https://doi.org/10.3133/pp1180</a></span><br/>
+<span class="element-name edomvd">Enumerated_Domain_Value_Definition:</span> <span class="element-value edomvd">Accessible via the DOI link</span><br/>
+<span class="element-name edomvds">Enumerated_Domain_Value_Definition_Source:</span> <span class="element-value edomvds">Producer defined</span><br/>
+</div>
+</div>
+</div>
+</div>
+<span class="element-name detailed">Detailed_Description:</span><div class="child">
+<span class="element-name enttyp">Entity_Type:</span><div class="child">
+<span class="element-name enttypl">Entity_Type_Label:</span> <span class="element-value enttypl">[Glacier]_GNSS_Point_Observations.csv</span><br/>
+<span class="element-name enttypd">Entity_Type_Definition:</span>
+<div class="child element-value enttypd">
+Table with point observations at mass balance stakes. Data include mass balance stake point location in XYZ space measured by Global Navigation Satellite System (GNSS), surface height measurement, and measurement date. Files are named following the convention: [Glacier]_GNSS_Point_Observations.csv
+</div>
+<span class="element-name enttypds">Entity_Type_Definition_Source:</span> <span class="element-value enttypds">Producer Defined</span><br/>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Stake_name</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">label name at the stake</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name udom">Unrepresentable_Domain:</span> <span class="element-value udom">label name at the stake</span><br/>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Site</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">name of the mass balance site, or name of the survey object</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name udom">Unrepresentable_Domain:</span> <span class="element-value udom">name of the mass balance site, or name of the survey object</span><br/>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Year</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">year stake or installation was placed</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">2012</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">2021</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">Year</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">1</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Date</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">Year month day when the stake or object was surveyed</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">4/23/2015</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">8/31/2021</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">Days</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Survey_surface_height</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span>
+<div class="child element-value attrdef">
+On mass balance stakes, this represents the distance from the bottom of the stake, which is drilled into the glacier below the snow/ice surface, to the glacier (snow or ice) surface at the time of survey.
+</div>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">0.7</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">16.82</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">meters</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Easting</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">UTM coordinate in the X direction</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">393282.96</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">397183.98</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">meters</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Northing</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span> <span class="element-value attrdef">UTM coordinate in the Y direction</span><br/>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">6695144.17</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">6700910.9</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">meters</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+<span class="element-name attr">Attribute:</span><div class="child">
+<span class="element-name attrlabl">Attribute_Label:</span> <span class="element-value attrlabl">Elevation</span><br/>
+<span class="element-name attrdef">Attribute_Definition:</span>
+<div class="child element-value attrdef">
+Elevation at the glacier or land surface expressed as a height above the ellipsoid
+</div>
+<span class="element-name attrdefs">Attribute_Definition_Source:</span> <span class="element-value attrdefs">Producer Defined</span><br/>
+<span class="element-name attrdomv">Attribute_Domain_Values:</span><div class="child">
+<span class="element-name rdom">Range_Domain:</span><div class="child">
+<span class="element-name rdommin">Range_Domain_Minimum:</span> <span class="element-value rdommin">550.66</span><br/>
+<span class="element-name rdommax">Range_Domain_Maximum:</span> <span class="element-value rdommax">1547.9</span><br/>
+<span class="element-name attrunit">Attribute_Units_of_Measure:</span> <span class="element-value attrunit">Meters</span><br/>
+<span class="element-name attrmres">Attribute_Measurement_Resolution:</span> <span class="element-value attrmres">0.01</span><br/>
+</div>
+</div>
+</div>
+</div>
+<span class="element-name overview">Overview_Description:</span><div class="child">
+<span class="element-name eaover">Entity_and_Attribute_Overview:</span>
+<div class="child element-value eaover">
+Geodetic measurements on USGS Benchmark Glaciers are used to quantify glacier area, hypsometry, and changes over time in glacier volume and estimated mass. Source of DEM and orthoimagery, as well as process for creation, is denoted in the accompanying tables, named [Glacier]_Geodetic_Metadata.csv. Dates sourced from analog recovery are denoted with SD, aerial imagery denoted with SfM, and satellite imagery denoted with ASP (where processed via the Ames Stereo Pipeline), or SOCET SET (where 
+<div class="blank"></div>
+Geodetic data are presented in two formats: Tagged Image File Formats (.tif) and vector geospatial data (.shp and .kmz). DEMs and/or orthorectified images derived from photogrammetry are .tif format, and glacier areas derived from margin tracing are .shp and .kmz formats (duplicates provided in two formats for convenience). Data are separated by glacier, with individual files named with the glacier name, date of data acquisition (yyyy.mm.dd), and data type (DEM, Ortho, or Outlines). For example, a DEM and ortho-rectified image derived from aerial photographs of Lemon Creek Glacier taken on September 18th, 1957 are labeled LemonCreek_1957.09.18_DEM.tif and LemonCreek_1957.09.18_Ortho.tif.
+</div>
+<span class="element-name eadetcit">Entity_and_Attribute_Detail_Citation:</span> <span class="element-value eadetcit">Producer Defined</span><br/>
+</div>
+</div>
+</div>
+<div class="major-section" id="6">
+<span class="element-name distinfo">Distribution_Information:</span><div class="child">
+<span class="element-name distrib">Distributor:</span><div class="child">
+<span class="element-name cntinfo">Contact_Information:</span><div class="child">
+<span class="element-name cntorgp">Contact_Organization_Primary:</span><div class="child">
+<span class="element-name cntorg">Contact_Organization:</span> <span class="element-value cntorg">U.S. Geological Survey, Alaska Science Center</span><br/>
+</div>
+<span class="element-name cntaddr">Contact_Address:</span><div class="child">
+<span class="element-name addrtype">Address_Type:</span> <span class="element-value addrtype">Mailing and Physical</span><br/>
+<span class="element-name address">Address:</span> <span class="element-value address">4210 University Drive</span><br/>
+<span class="element-name city">City:</span> <span class="element-value city">Anchorage</span><br/>
+<span class="element-name state">State_or_Province:</span> <span class="element-value state">Alaska</span><br/>
+<span class="element-name postal">Postal_Code:</span> <span class="element-value postal">99508</span><br/>
+<span class="element-name country">Country:</span> <span class="element-value country">USA</span><br/>
+</div>
+<span class="element-name cntvoice">Contact_Voice_Telephone:</span> <span class="element-value cntvoice">907-786-7000</span><br/>
+<span class="element-name cntemail">Contact_Electronic_Mail_Address:</span> <span class="element-value cntemail">ascweb@usgs.gov</span><br/>
+</div>
+</div>
+<span class="element-name resdesc">Resource_Description:</span>
+<div class="child element-value resdesc">
+The U.S. Geological Survey, Alaska Science Center is the authoritative source and distributor of these data.
+</div>
+<span class="element-name distliab">Distribution_Liability:</span>
+<div class="child element-value distliab">
+Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey, no warranty expressed or implied is made regarding the display or utility of the data for other purposes or on all computer systems, nor shall the act of distribution constitute any such warranty. Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government.
+</div>
+<span class="element-name stdorder">Standard_Order_Process:</span><div class="child">
+<span class="element-name digform">Digital_Form:</span><div class="child">
+<span class="element-name digtinfo">Digital_Transfer_Information:</span><div class="child">
+<span class="element-name formname">Format_Name:</span> <span class="element-value formname">TIF, SHP, KML, CSV</span><br/>
+<span class="element-name formcont">Format_Information_Content:</span>
+<div class="child element-value formcont">
+Data are distributed in Zip packages containing a combination of GeoTIFF files, ESRI shapefiles, KML files, CSV files, and 'READMEs' in PDF format, and metadata in XML and HTML format.
+</div>
+<span class="element-name filedec">File_Decompression_Technique:</span>
+<div class="child element-value filedec">
+Compression applied by the 7-Zip utility using default compression (5). The Zip package can be decompressed and unpacked by open source or commercially available unzip tools.
+</div>
+</div>
+<span class="element-name digtopt">Digital_Transfer_Option:</span><div class="child">
+<span class="element-name onlinopt">Online_Option:</span><div class="child">
+<span class="element-name computer">Computer_Contact_Information:</span><div class="child">
+<span class="element-name networka">Network_Address:</span><div class="child">
+<span class="element-name networkr">Network_Resource_Name:</span> <span class="element-value networkr"><a href="https://doi.org/10.5066/P9R8BP3K">https://doi.org/10.5066/P9R8BP3K</a></span><br/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<span class="element-name fees">Fees:</span> <span class="element-value fees">None</span><br/>
+</div>
+</div>
+</div>
+<div class="major-section" id="7">
+<span class="element-name metainfo">Metadata_Reference_Information:</span><div class="child">
+<span class="element-name metd">Metadata_Date:</span> <span class="element-value metd">20220808</span><br/>
+<span class="element-name metc">Metadata_Contact:</span><div class="child">
+<span class="element-name cntinfo">Contact_Information:</span><div class="child">
+<span class="element-name cntorgp">Contact_Organization_Primary:</span><div class="child">
+<span class="element-name cntorg">Contact_Organization:</span> <span class="element-value cntorg">U.S. Geological Survey, Alaska Science Center</span><br/>
+</div>
+<span class="element-name cntaddr">Contact_Address:</span><div class="child">
+<span class="element-name addrtype">Address_Type:</span> <span class="element-value addrtype">Mailing and Physical</span><br/>
+<span class="element-name address">Address:</span> <span class="element-value address">4210 University Drive</span><br/>
+<span class="element-name city">City:</span> <span class="element-value city">Anchorage</span><br/>
+<span class="element-name state">State_or_Province:</span> <span class="element-value state">Alaska</span><br/>
+<span class="element-name postal">Postal_Code:</span> <span class="element-value postal">99508</span><br/>
+<span class="element-name country">Country:</span> <span class="element-value country">USA</span><br/>
+</div>
+<span class="element-name cntvoice">Contact_Voice_Telephone:</span> <span class="element-value cntvoice">907-786-7000</span><br/>
+<span class="element-name cntemail">Contact_Electronic_Mail_Address:</span> <span class="element-value cntemail">ascweb@usgs.gov</span><br/>
+</div>
+</div>
+<span class="element-name metstdn">Metadata_Standard_Name:</span> <span class="element-value metstdn">FGDC Content Standard for Digital Geospatial Metadata (CSDGM)</span><br/>
+<span class="element-name metstdv">Metadata_Standard_Version:</span> <span class="element-value metstdv">FGDC-STD-001-1998</span><br/>
+</div>
+</div>
+<hr id="page-bottom"/>
+<div id="generated-by">Generated by <a href="https://geology.usgs.gov/tools/metadata/tools/doc/mp.html" style="font-family: monospace;">mp</a> version 2.9.52 on Mon Aug  8 16:56:37 2022</div>
+
+</body>
+</html>

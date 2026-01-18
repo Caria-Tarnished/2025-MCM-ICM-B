@@ -1,0 +1,11 @@
+Date,DEM Pixel Size,Ortho Pixel Size,DEM Glacier Coverage,Glacier Area,Technique,Platform,Source,DEM Technician,Boundary Technician,Source Imagery Access
+8/13/1958,9.83,1.24,0.98,2.93,Sfm,aerial,Scanned films,McNeil,Bright,https://earthexplorer.usgs.gov/
+9/29/1970,0.64,0.32,1,2.74,Sfm,aerial,"Scanned films (Nolan and others, 2017)",McCann,Bright,https://doi.org/10.18739/A2VH5CJ8K
+10/6/1979,0.46,0.23,1,2.65,Sfm,aerial,"Scanned films (Nolan and others, 2017)",McCann,Bright,https://doi.org/10.18739/A2VH5CJ8K
+9/5/1986,0.8,0.4,0.74,2.57,Sfm,aerial,"Scanned films (Nolan and others, 2017)",Bright,Bright,https://doi.org/10.18739/A2VH5CJ8K
+10/6/1992,0.59,0.15,0.92,2.3,Sfm,aerial,"Scanned films (Nolan and others, 2017)",McCann,Bright,https://doi.org/10.18739/A2VH5CJ8K
+9/20/2001,0.28,0.14,0.96,2.15,Sfm,aerial,"Scanned films (Nolan and others, 2017)",Bright,Bright,https://doi.org/10.18739/A2VH5CJ8K
+9/26/2004,5,na,0.99,2.13,Socet Set,aerial,Classified,Fahey,Bright,"Classified, not available"
+10/1/2008,2,0.51,0.99,2.04,ASP,satellite,Worldview,Shean,Bright,Available for scientific use via https://www.digitalglobe.com/
+10/14/2015,2,0.55,0.99,1.82,ASP,satellite,Worldview,Shean,Keller,Available for scientific use via https://www.digitalglobe.com/
+8/13/2021,2,0.53,0.99,1.8,ASP,satellite,Worldview,McNeil,McNeil,Available for scientific use via https://www.digitalglobe.com/

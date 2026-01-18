@@ -1,0 +1,5 @@
+Date,DEM Pixel Size,Ortho Pixel Size,DEM Glacier Coverage,Glacier Area,Technique,Platform,Source,DEM Technician,Boundary Technician,Source Imagery Access
+9/1/1950,5,na,0.98,1.31,Scanning,na,"topographic map, Johnson, 1980",Florentine,Florentine,https://doi.org/10.3133/pp1180
+9/8/1960,5,na,0.98,1.25,Scanning,na,"topographic map, Johnson, 1980",Florentine,Florentine,https://doi.org/10.3133/pp1180
+8/26/2005,5,na,1,0.89,Socet Set,aerial,classified,Fahey,McKeon,"Classified, not available"
+9/7/2014,5,0.5,1,0.81,Socet Set,satellite,Worldview,Fahey,Florentine,Available for scientific use via https://www.digitalglobe.com/

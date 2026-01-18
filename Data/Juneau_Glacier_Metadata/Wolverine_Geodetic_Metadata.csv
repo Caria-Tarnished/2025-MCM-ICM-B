@@ -1,0 +1,20 @@
+Date,DEM Pixel Size,Ortho Pixel Size,DEM Glacier Coverage,Glacier Area,Technique,Platform,Source,DEM Technician,Boundary Technician,Source Imagery Access
+8/7/1950,17.15,1.07,0.71,17.5,Sfm,aerial,Scanned films,McNeil,McNeil,https://earthexplorer.usgs.gov/
+8/25/1969,1.1,0.27,0.46,17.11,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+9/13/1972,1.08,0.27,0.7,17.05,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+8/14/1974,1.62,0.2,0.63,17.06,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+8/24/1978,na,0.88,na,17.03,Sfm,aerial,Scanned films,McNeil,McNeil,https://earthexplorer.usgs.gov/
+8/3/1979,5.83,0.36,0.67,17,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+9/27/1995,4.82,0.6,0.95,16.79,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+9/24/1998,na,0.36,na,16.68,Sfm,aerial,"Scanned films, Nolan and others, 2017",McNeil,McNeil,https://doi.org/10.18739/A2VH5CJ8K
+8/8/2006,2.94,2.23,0.51,16.35,Sfm,aerial,Scanned films,McNeil,McNeil,https://earthexplorer.usgs.gov/
+9/17/2008,5,na,1,16.33,Socet Set,aerial,classified,Fahey,McNeil,"Classified, not available"
+7/6/2011,2,1,1,16.21,Socet Set,satellite,Ikonos,March,McNeil,Not published
+8/22/2012,0.49,0.4,0.96,16.16,ASP,satellite,Worldview,Thoms,McNeil,Available for scientific use via https://www.digitalglobe.com/
+8/13/2015,0.5,0.25,1,15.92,Sfm,aerial,Nikon D810 camera,Larsen,McNeil,Not published
+9/1/2016,na,na,na,15.86,na,satellite,Pleiades,na,McNeil,https://earth.esa.int
+5/5/2017,0.5,na,1,na,Sfm,aerial,Nikon D850 camera,Larsen,McNeil,Not published
+9/12/2018,2,0.59,0.97,15.63,ASP,satellite,Worldview,McNeil,McNeil,Available for scientific use via https://www.digitalglobe.com/
+8/19/2019,na,na,na,15.56,ASP,satelite,Worldview,na,McNeil,Available for scientific use via https://www.digitalglobe.com/
+5/2/2020,0.3,na,1,na,LiDAR,aerial,Riegl VQ-580 ii,Larsen,na,na
+10/19/2020,2,0.32,1,15.45,ASP,satellite,Worldview,McNeil,McNeil,Available for scientific use via https://www.digitalglobe.com/

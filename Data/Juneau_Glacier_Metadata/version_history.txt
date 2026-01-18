@@ -1,0 +1,32 @@
+________________________________________________________
+
+Version History for "Geodetic data for USGS benchmark glaciers: orthophotos, digital elevation models, glacier boundaries and surveyed positions"
+________________________________________________________
+Current Citation
+
+McNeil, C.J., Florentine, C.E., Bright, V.A.L., Fahey, M.J., McCann, E., Larsen, C.F., Thoms, E.E., Shean, D.E., McKeon, L.A., March, R.S., Keller, W., Whorton, E.N., O'Neel, S., Baker, E.H., Sass, L.C. and Bollen, K.E. 2019, Geodetic data for USGS benchmark glaciers: orthophotos, digital elevation models, glacier boundaries and surveyed positions (ver 3.0, August 2022): U.S. Geological Survey data release, https://doi.org/10.5066/P9R8BP3K
+________________________________________________________
+
+Version 1.0 posted online August 2019
+
+Original Citation
+
+McNeil, C.J., Florentine, C.E., Bright, V.A.L., Fahey, M.J., McCann, E., Larsen, C.F., Thoms, E.E., Shean, D.E., McKeon, L.A., March, R.S., Keller, W., Whorton, E.N., O'Neel, S., Baker, E.H., 2019, Geodetic data for USGS benchmark glaciers: orthophotos, digital elevation models, and glacier boundaries (ver 1.0, September 2019): U.S. Geological Survey data release, https://doi.org/10.5066/P9R8BP3K
+
+Contents:
+DEMs, Orthophotos, glacier boundary vector files, and associated metadata from five USGS benchmark glaciers 
+________________________________________________________
+
+Version 2.0 posted online February 2022
+
+Changes in version 2.0
+
+1. Addition of 2 DEMs at Wolverine Glacier: (2017-05-05 and 2020-05-02)
+2. Addition of GPS/GNSS data for ablation stakes at Wolverine Glacier: from 2015 to 2020.
+________________________________________________________
+
+Version 3.0  posted online August 2022
+
+Changes in version 3.0
+
+1. Addition of 4 x DEMs, Orthos, and Glacier Boundaries at: Gulkana (2021-09-19), Wolverine (2020-10-19), Lemon Creek (2021-10-05), and South Cascade (2021-08-13)

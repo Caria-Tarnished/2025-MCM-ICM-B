@@ -1,160 +1,160 @@
-# 2025 MCM/ICM ÎÊÌâB - ÖìÅµÂÃÓÎ¿É³ÖÐøÐÔ·ÖÎö
+# 2025 MCM/ICM é—®é¢˜B - æœ±è¯ºæ—…æ¸¸å¯æŒç»­æ€§åˆ†æž
 
 [![Competition](https://img.shields.io/badge/Competition-MCM%2FICM%202025-blue)](https://www.comap.com/contests/mcm-icm)
 [![Award](https://img.shields.io/badge/Award-Honorable%20Mention-green)](https://www.comap.com/contests/mcm-icm)
 [![Problem](https://img.shields.io/badge/Problem-B-orange)](https://www.comap.com/contests/mcm-icm)
 
-> **ÖÐÎÄ** | [English](README.md)
+> **ä¸­æ–‡** | [English](README.md)
 
-## ÏîÄ¿¸ÅÊö
+## é¡¹ç›®æ¦‚è¿°
 
-±¾²Ö¿â°üº¬ÎÒÃÇÍÅ¶Ó²Î¼Ó **2025ÄêÊýÑ§½¨Ä£¾ºÈü£¨MCM/ICM£©ÎÊÌâB** µÄÍêÕû´úÂëºÍ²ÄÁÏ¡£ÎÒÃÇµÄÍÅ¶Ó»ñµÃÁË **Honorable Mention£¨ÈÙÓþ½±£©** ¡£
+æœ¬ä»“åº“åŒ…å«æˆ‘ä»¬å›¢é˜Ÿå‚åŠ  **2025å¹´æ•°å­¦å»ºæ¨¡ç«žèµ›ï¼ˆMCM/ICMï¼‰é—®é¢˜B** çš„å®Œæ•´ä»£ç å’Œææ–™ã€‚æˆ‘ä»¬çš„å›¢é˜ŸèŽ·å¾—äº† **Honorable Mentionï¼ˆè£èª‰å¥–ï¼‰** ã€‚
 
-### ÎÊÌâÃèÊö
+### é—®é¢˜æè¿°
 
-ÎÊÌâB¾Û½¹ÓÚ **°¢À­Ë¹¼ÓÖìÅµÊÐµÄÂÃÓÎ¿É³ÖÐøÐÔ**£¬ÌØ±ðÊÇ·ÖÎöÓÊÂÖÂÃÓÎ¶Ôµ±µØ¾­¼Ã¡¢»·¾³ºÍÉç»áµÄÓ°Ïì¡£ÌôÕ½ÔÚÓÚÆ½ºâ¾­¼ÃÐ§ÒæÓë»·¾³±£»¤ºÍÉçÇø¸£ìí¡£
+é—®é¢˜Bèšç„¦äºŽ **é˜¿æ‹‰æ–¯åŠ æœ±è¯ºå¸‚çš„æ—…æ¸¸å¯æŒç»­æ€§**ï¼Œç‰¹åˆ«æ˜¯åˆ†æžé‚®è½®æ—…æ¸¸å¯¹å½“åœ°ç»æµŽã€çŽ¯å¢ƒå’Œç¤¾ä¼šçš„å½±å“ã€‚æŒ‘æˆ˜åœ¨äºŽå¹³è¡¡ç»æµŽæ•ˆç›Šä¸ŽçŽ¯å¢ƒä¿æŠ¤å’Œç¤¾åŒºç¦ç¥‰ã€‚
 
-## ÏîÄ¿½á¹¹
+## é¡¹ç›®ç»“æž„
 
 ```
-.
-©À©¤©¤ 2025_MCM-ICM_Problems/          # ¾ºÈüÌâÄ¿ÎÄ¼þ
-©¦   ©À©¤©¤ 2025_MCM_Problem_B.pdf      # Ó¢ÎÄÔ­Ìâ
-©¦   ©¸©¤©¤ Contest_AI_Policy.pdf       # AIÊ¹ÓÃÕþ²ß
-©À©¤©¤ 2025ÈüÌâ·­Òë/                    # ÌâÄ¿ÖÐÎÄ·­Òë
-©¦   ©¸©¤©¤ 2025_MCM_Problem_B_·­Òë.pdf
-©À©¤©¤ Data/                            # Êý¾ÝÎÄ¼þ
-©¦   ©À©¤©¤ glacier_data.xlsx           # ±ù´¨Êý¾Ý
-©¦   ©À©¤©¤ tourism_data.xlsx           # ÂÃÓÎÊý¾Ý
-©¦   ©À©¤©¤ Juneau_field_data.xlsx      # ÖìÅµÊµµØÊý¾Ý
-©¦   ©¸©¤©¤ Juneau_city_tourism_data/   # ÖìÅµ³ÇÊÐÂÃÓÎÏêÏ¸Êý¾Ý
-©À©¤©¤ Analysis.py                      # Ãô¸ÐÐÔ·ÖÎö´úÂë
-©À©¤©¤ pareto_2.py                      # ÅÁÀÛÍÐÇ°ÑØÓÅ»¯
-©À©¤©¤ moudle.ipynb                     # Ö÷Òª½¨Ä£´úÂë
-©À©¤©¤ Time_forecast.ipynb              # Ê±¼äÐòÁÐÔ¤²â
-©À©¤©¤ ²Î¿¼ÂÛÎÄ/                        # ²Î¿¼ÎÄÏ×
-©¸©¤©¤ ÂÛÎÄ/                            # ÂÛÎÄÏà¹Ø²ÄÁÏ
+ã€‚
+â”œâ”€â”€ 2025_MCM-ICM_Problems/          # ç«žèµ›é¢˜ç›®æ–‡ä»¶
+â”‚   â”œâ”€â”€ 2025_MCM_Problem_B.pdf      # è‹±æ–‡åŽŸé¢˜
+â”‚   â””â”€â”€ Contest_AI_Policy.pdf       # AIä½¿ç”¨æ”¿ç­–
+â”œâ”€â”€ 2025èµ›é¢˜ç¿»è¯‘/                    # é¢˜ç›®ä¸­æ–‡ç¿»è¯‘
+â”‚   â””â”€â”€ 2025_MCM_Problem_B_ç¿»è¯‘.pdf
+â”œâ”€â”€ Data/                            # æ•°æ®æ–‡ä»¶
+â”‚   â”œâ”€â”€ glacier_data.xlsx           # å†°å·æ•°æ®
+â”‚   â”œâ”€â”€ tourism_data.xlsx           # æ—…æ¸¸æ•°æ®
+â”‚   â”œâ”€â”€ Juneau_field_data.xlsx      # æœ±è¯ºå®žåœ°æ•°æ®
+â”‚   â””â”€â”€ Juneau_city_tourism_data/   # æœ±è¯ºåŸŽå¸‚æ—…æ¸¸è¯¦ç»†æ•°æ®
+â”œâ”€â”€ Analysis.py                      # æ•æ„Ÿæ€§åˆ†æžä»£ç 
+â”œâ”€â”€ pareto_2.py                      # å¸•ç´¯æ‰˜å‰æ²¿ä¼˜åŒ–
+â”œâ”€â”€ moudle.ipynb                     # ä¸»è¦å»ºæ¨¡ä»£ç 
+â”œâ”€â”€ Time_forecast.ipynb              # æ—¶é—´åºåˆ—é¢„æµ‹
+â”œâ”€â”€ å‚è€ƒè®ºæ–‡/                        # å‚è€ƒæ–‡çŒ®
+â””â”€â”€ è®ºæ–‡/                            # è®ºæ–‡ç›¸å…³ææ–™
 ```
 
-## Ö÷ÒªÄ£ÐÍÓë·½·¨
+## ä¸»è¦æ¨¡åž‹ä¸Žæ–¹æ³•
 
-### 1. ¶àÄ¿±êÓÅ»¯Ä£ÐÍ
-- **Ëã·¨**: NSGA-II (·ÇÖ§ÅäÅÅÐòÒÅ´«Ëã·¨ II)
-- **Ä¿±êº¯Êý**:
-  - ¾­¼ÃÊÕÒæ×î´ó»¯
-  - ¾ÓÃñÂúÒâ¶È×î´ó»¯
-  - Ì¼ÅÅ·Å×îÐ¡»¯
-  - Òþ²Ø³É±¾×îÐ¡»¯
-- **ÎÄ¼þ**: `pareto_2.py`
+### 1. å¤šç›®æ ‡ä¼˜åŒ–æ¨¡åž‹
+- **ç®—æ³•**: NSGA-II (éžæ”¯é…æŽ’åºé—ä¼ ç®—æ³• II)
+- **ç›®æ ‡å‡½æ•°**:
+  - ç»æµŽæ”¶ç›Šæœ€å¤§åŒ–
+  - å±…æ°‘æ»¡æ„åº¦æœ€å¤§åŒ–
+  - ç¢³æŽ’æ”¾æœ€å°åŒ–
+  - éšè—æˆæœ¬æœ€å°åŒ–
+- **æ–‡ä»¶**: `pareto_2.py`
 
-### 2. Ê±¼äÐòÁÐÔ¤²â
-- **·½·¨**: 
-  - Prophet Ä£ÐÍ
-  - LSTM Éñ¾­ÍøÂç
-- **Ô¤²â±äÁ¿**:
-  - ¿ÕÆøÖÊÁ¿Ö¸Êý
-  - ÎÂÊÒÆøÌåÅÅ·Å
-  - ±ù´¨Ãæ»ý
-  - Ì¼ÅÅ·ÅÁ¿
-- **ÎÄ¼þ**: `Time_forecast.ipynb`
+### 2. æ—¶é—´åºåˆ—é¢„æµ‹
+- **æ–¹æ³•**: 
+  - Prophet æ¨¡åž‹
+  - LSTM ç¥žç»ç½‘ç»œ
+- **é¢„æµ‹å˜é‡**:
+  - ç©ºæ°”è´¨é‡æŒ‡æ•°
+  - æ¸©å®¤æ°”ä½“æŽ’æ”¾
+  - å†°å·é¢ç§¯
+  - ç¢³æŽ’æ”¾é‡
+- **æ–‡ä»¶**: `Time_forecast.ipynb`
 
-### 3. ¾ö²ßÓÅ»¯
-- **·½·¨**:
-  - ÒÅ´«Ëã·¨ (Genetic Algorithm)
-  - Ö±½ÓËÑË÷·¨ (Direct Search)
-  - ÏßÐÔ»Ø¹é½¨Ä£
-- **ÎÄ¼þ**: `moudle.ipynb`
+### 3. å†³ç­–ä¼˜åŒ–
+- **æ–¹æ³•**:
+  - é—ä¼ ç®—æ³• (Genetic Algorithm)
+  - ç›´æŽ¥æœç´¢æ³• (Direct Search)
+  - çº¿æ€§å›žå½’å»ºæ¨¡
+- **æ–‡ä»¶**: `moudle.ipynb`
 
-### 4. Ãô¸ÐÐÔ·ÖÎö
-- ·ÖÎöÓÎ¿ÍÁ¿ºÍÓÊÂÖÊýÁ¿±ä»¯¶Ô¾­¼Ã¡¢Éç»áºÍ»·¾³µÄÓ°Ïì
-- **ÎÄ¼þ**: `Analysis.py`
+### 4. æ•æ„Ÿæ€§åˆ†æž
+- åˆ†æžæ¸¸å®¢é‡å’Œé‚®è½®æ•°é‡å˜åŒ–å¯¹ç»æµŽã€ç¤¾ä¼šå’ŒçŽ¯å¢ƒçš„å½±å“
+- **æ–‡ä»¶**: `Analysis.py`
 
-## ¼¼ÊõÕ»
+## æŠ€æœ¯æ ˆ
 
 - **Python 3.9+**
-- **Ö÷Òª¿â**:
-  - `numpy` - ÊýÖµ¼ÆËã
-  - `pandas` - Êý¾Ý´¦Àí
-  - `matplotlib` - Êý¾Ý¿ÉÊÓ»¯
-  - `scikit-learn` - »úÆ÷Ñ§Ï°
-  - `tensorflow/keras` - Éî¶ÈÑ§Ï°
-  - `prophet` - Ê±¼äÐòÁÐÔ¤²â
-  - `pymoo` - ¶àÄ¿±êÓÅ»¯
-  - `deap` - ÒÅ´«Ëã·¨
+- **ä¸»è¦åº“**:
+  - `numpy` - æ•°å€¼è®¡ç®—
+  - `pandas` - æ•°æ®å¤„ç†
+  - `matplotlib` - æ•°æ®å¯è§†åŒ–
+  - `scikit-learn` - æœºå™¨å­¦ä¹ 
+  - `tensorflow/keras` - æ·±åº¦å­¦ä¹ 
+  - `prophet` - æ—¶é—´åºåˆ—é¢„æµ‹
+  - `pymoo` - å¤šç›®æ ‡ä¼˜åŒ–
+  - `deap` - é—ä¼ ç®—æ³•
 
-## °²×°ÓëÔËÐÐ
+## å®‰è£…ä¸Žè¿è¡Œ
 
-### »·¾³ÅäÖÃ
+### çŽ¯å¢ƒé…ç½®
 
 ```bash
-# ¿ËÂ¡²Ö¿â
+# å…‹éš†ä»“åº“
 git clone https://github.com/Caria-Tarnished/2025-MCM-ICM-B.git
 cd 2025-MCM-ICM-B
 
-# ´´½¨ÐéÄâ»·¾³£¨ÍÆ¼ö£©
+# åˆ›å»ºè™šæ‹ŸçŽ¯å¢ƒï¼ˆæŽ¨èï¼‰
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# °²×°ÒÀÀµ
+# å®‰è£…ä¾èµ–
 pip install numpy pandas matplotlib scikit-learn
 pip install tensorflow prophet pymoo deap
 ```
 
-### ÔËÐÐ´úÂë
+### è¿è¡Œä»£ç 
 
 ```bash
-# ÔËÐÐÅÁÀÛÍÐÓÅ»¯
+# è¿è¡Œå¸•ç´¯æ‰˜ä¼˜åŒ–
 python pareto_2.py
 
-# ÔËÐÐÃô¸ÐÐÔ·ÖÎö
+# è¿è¡Œæ•æ„Ÿæ€§åˆ†æž
 python Analysis.py
 
-# ÔËÐÐ Jupyter Notebook
+# è¿è¡Œ Jupyter Notebook
 jupyter notebook moudle.ipynb
 jupyter notebook Time_forecast.ipynb
 ```
 
-## Ö÷Òª½á¹û
+## ä¸»è¦ç»“æžœ
 
-1. **ÅÁÀÛÍÐÇ°ÑØ½â**: ÕÒµ½ÁË¾­¼Ã¡¢Éç»áºÍ»·¾³Ä¿±êÖ®¼äµÄ×îÓÅÆ½ºâµã
-2. **Ê±¼äÐòÁÐÔ¤²â**: Ô¤²âÁËÎ´À´5ÄêµÄ»·¾³Ö¸±ê±ä»¯Ç÷ÊÆ
-3. **¾ö²ß±äÁ¿ÓÅ»¯**: È·¶¨ÁË×îÓÅµÄÓÎ¿ÍÁ¿ºÍÓÊÂÖÊýÁ¿ÅäÖÃ
-4. **Ãô¸ÐÐÔ·ÖÎö**: Á¿»¯ÁË²»Í¬ÒòËØ±ä»¯¶ÔÏµÍ³µÄÓ°Ïì³Ì¶È
+1. **å¸•ç´¯æ‰˜å‰æ²¿è§£**: æ‰¾åˆ°äº†ç»æµŽã€ç¤¾ä¼šå’ŒçŽ¯å¢ƒç›®æ ‡ä¹‹é—´çš„æœ€ä¼˜å¹³è¡¡ç‚¹
+2. **æ—¶é—´åºåˆ—é¢„æµ‹**: é¢„æµ‹äº†æœªæ¥5å¹´çš„çŽ¯å¢ƒæŒ‡æ ‡å˜åŒ–è¶‹åŠ¿
+3. **å†³ç­–å˜é‡ä¼˜åŒ–**: ç¡®å®šäº†æœ€ä¼˜çš„æ¸¸å®¢é‡å’Œé‚®è½®æ•°é‡é…ç½®
+4. **æ•æ„Ÿæ€§åˆ†æž**: é‡åŒ–äº†ä¸åŒå› ç´ å˜åŒ–å¯¹ç³»ç»Ÿçš„å½±å“ç¨‹åº¦
 
-## Êý¾ÝËµÃ÷
+## æ•°æ®è¯´æ˜Ž
 
-### Ö÷ÒªÊý¾Ý¼¯
+### ä¸»è¦æ•°æ®é›†
 
-- **glacier_data.xlsx**: ±ù´¨Ãæ»ýÀúÊ·Êý¾Ý
-- **tourism_data.xlsx**: ÂÃÓÎÒµÏà¹ØÊý¾Ý£¨ÓÎ¿ÍÁ¿¡¢ÓÊÂÖÊýÁ¿µÈ£©
-- **Juneau_field_data.xlsx**: ÖìÅµµØÇø×ÛºÏÊý¾Ý
-- **Juneau_city_tourism_data/**: ÏêÏ¸µÄ³ÇÊÐÂÃÓÎÍ³¼ÆÊý¾Ý
-  - ÈË¿ÚÊý¾Ý
-  - ÊÕÈëÊý¾Ý
-  - »·¾³ÖÊÁ¿Êý¾Ý
-  - ÅÅ·ÅÊý¾Ý
+- **glacier_data.xlsx**: å†°å·é¢ç§¯åŽ†å²æ•°æ®
+- **tourism_data.xlsx**: æ—…æ¸¸ä¸šç›¸å…³æ•°æ®ï¼ˆæ¸¸å®¢é‡ã€é‚®è½®æ•°é‡ç­‰ï¼‰
+- **Juneau_field_data.xlsx**: æœ±è¯ºåœ°åŒºç»¼åˆæ•°æ®
+- **Juneau_city_tourism_data/**: è¯¦ç»†çš„åŸŽå¸‚æ—…æ¸¸ç»Ÿè®¡æ•°æ®
+  - äººå£æ•°æ®
+  - æ”¶å…¥æ•°æ®
+  - çŽ¯å¢ƒè´¨é‡æ•°æ®
+  - æŽ’æ”¾æ•°æ®
 
-## ÍÅ¶Ó³ÉÔ±
+## å›¢é˜Ÿæˆå‘˜
 
-- ¶ÓÔ±1: [ÐÕÃû]
-- ¶ÓÔ±2: [ÐÕÃû]
-- ¶ÓÔ±3: [ÐÕÃû]
+- é˜Ÿå‘˜1: **[@KuTo-lgq](https://github.com/KuTo-lgq)**
+- é˜Ÿå‘˜2: **[@Caria-Tarnished](https://github.com/Caria-Tarnished)**
+- é˜Ÿå‘˜3: ä¸€ä½æ•°é™¢åŒå­¦
 
-## ÖÂÐ»
+## è‡´è°¢
 
-¸ÐÐ»ËùÓÐÎª±¾ÏîÄ¿Ìá¹©Êý¾ÝºÍ²Î¿¼×ÊÁÏµÄ»ú¹¹ºÍ¸öÈË¡£
+æ„Ÿè°¢æ‰€æœ‰ä¸ºæœ¬é¡¹ç›®æä¾›æ•°æ®å’Œå‚è€ƒèµ„æ–™çš„æœºæž„å’Œä¸ªäººã€‚
 
-## Ðí¿ÉÖ¤
+## è®¸å¯è¯
 
-±¾ÏîÄ¿½öÓÃÓÚÑ§Êõ½»Á÷ºÍÑ§Ï°Ä¿µÄ¡£
+æœ¬é¡¹ç›®ä»…ç”¨äºŽå­¦æœ¯äº¤æµå’Œå­¦ä¹ ç›®çš„ã€‚
 
-## ÁªÏµ·½Ê½
+## è”ç³»æ–¹å¼
 
-ÈçÓÐÈÎºÎÎÊÌâ»ò½¨Òé£¬»¶Ó­Í¨¹ýÒÔÏÂ·½Ê½ÁªÏµ£º
+å¦‚æœ‰ä»»ä½•é—®é¢˜æˆ–å»ºè®®ï¼Œæ¬¢è¿Žé€šè¿‡ä»¥ä¸‹æ–¹å¼è”ç³»ï¼š
 
 - Email: [your-email@example.com]
-- GitHub Issues: [ÏîÄ¿IssuesÒ³Ãæ]
+- GitHub Issues: [é¡¹ç›®Issuesé¡µé¢]
 
 ---
 
-**×¢Òâ**: ±¾²Ö¿âÖÐµÄ´úÂëºÍÊý¾Ý½ö¹©²Î¿¼Ñ§Ï°£¬ÇëÎðÖ±½ÓÓÃÓÚÆäËû¾ºÈü¡£
+**æ³¨æ„**: æœ¬ä»“åº“ä¸­çš„ä»£ç å’Œæ•°æ®ä»…ä¾›å‚è€ƒå­¦ä¹ ï¼Œè¯·å‹¿ç›´æŽ¥ç”¨äºŽå…¶ä»–ç«žèµ›ã€‚

@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-This repository contains the code and materials for our team’s participation in **MCM/ICM 2025 – Problem B**. Our team received an **Honorable Mention**.
+This repository contains the code and materials for our team's participation in **MCM/ICM 2025 - Problem B**. Our team received an **Honorable Mention**.
 
 ### Problem Description
 
@@ -18,23 +18,21 @@ Problem B focuses on **tourism sustainability in Juneau, Alaska**, especially th
 
 ```
 .
-├── 2025_MCM-ICM_Problems/          # Official problem statements & policies
-│   ├── 2025_MCM_Problem_B.pdf
-│   └── Contest_AI_Policy.pdf
-├── 2025赛题翻译/                    # Chinese translations of problems
-│   └── 2025_MCM_Problem_B_翻译.pdf
-├── Data/                            # Data files
-│   ├── glacier_data.xlsx
-│   ├── tourism_data.xlsx
-│   ├── Juneau_field_data.xlsx
-│   └── Juneau_city_tourism_data/
-├── Analysis.py                      # Sensitivity analysis
-├── pareto_2.py                      # Pareto frontier optimization
-├── moudle.ipynb                     # Main modeling notebook
-├── Time_forecast.ipynb              # Time series forecasting
-├── 参考论文/                        # Reference papers
-└── 论文/                            # Paper materials
+|-- 2025_MCM-ICM_Problems/          # Official problem statements & policies
+|   |-- 2025_MCM_Problem_B.pdf
+|   `-- Contest_AI_Policy.pdf
+|-- Data/                            # Data files
+|   |-- glacier_data.xlsx
+|   |-- tourism_data.xlsx
+|   |-- Juneau_field_data.xlsx
+|   `-- Juneau_city_tourism_data/
+|-- Analysis.py                      # Sensitivity analysis
+|-- pareto_2.py                      # Pareto frontier optimization
+|-- moudle.ipynb                     # Main modeling notebook
+`-- Time_forecast.ipynb              # Time series forecasting
 ```
+
+For Chinese translations, references, and paper materials, please see `README_CN.md`.
 
 ## Main Models and Methods
 

@@ -4,7 +4,7 @@
 [![Award](https://img.shields.io/badge/Award-Honorable%20Mention-green)](https://www.comap.com/contests/mcm-icm)
 [![Problem](https://img.shields.io/badge/Problem-B-orange)](https://www.comap.com/contests/mcm-icm)
 
-> **中文版** | [English](README.md)
+> **中文** | [English](README.md)
 
 ## 项目概述
 

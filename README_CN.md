@@ -152,7 +152,7 @@ jupyter notebook Time_forecast.ipynb
 
 如有任何问题或建议，欢迎通过以下方式联系：
 
-- Email: [your-email@example.com]
+- Email: [2571610260@qq.com]
 - GitHub Issues: [项目Issues页面]
 
 ---
